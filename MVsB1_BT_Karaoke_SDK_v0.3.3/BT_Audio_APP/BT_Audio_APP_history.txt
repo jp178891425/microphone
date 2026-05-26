@@ -1,0 +1,394 @@
+---------------------------------------------------------------------------------------
+                                RELEASE NOTES
+
+Shanghai Mountain View Silicon Co. Ltd. Copyright 2015, All rights reserved.
+
+免责声明
+
+上海山景集成电路股份有限公司(简称"山景")保留更改本软件开发包（简称SDK）的
+权利并且不保证本SDK的完全正确性，相关内容以最新版本为准。用户使用本SDK引
+起的任何损失或法律诉讼与山景无关。
+
+山景保留对系统软件产品在可靠性、功能和设计方面的改进以及进一步说明的权利。
+山景不承担由本SDK系统软件产品或其芯片的运用和使用所引起的任何责任。山景的
+产品不是专门设计应用于外科植入、生命维持和任何山景产品的故障会对个体造成伤
+害甚至死亡的领域。如果将山景的产品应用于上述领域，即使这些是由山景在产品设
+计和制造上的疏忽引起的，用户也应赔偿所有费用、损失、合理的人身伤害或死亡所
+直接或间接产生的律师费用，并且用户保证山景及其雇员、子公司、分支机构和销售
+商与上述事宜无关。
+
+任何人不得以任何形式 (如：电子的、机械的、手书的、光学存储的或以其它语言表
+述的形式，等等) 复制、复印或存储本文件的全部或一部分内容，除非得到山景的书
+面同意。
+
+注意：在工程文件中，所有源文件的位置、文件名请不要轻易改动，任何疑问请及时
+联系山景的技术工程人员，谢谢！
+
+       MVsB1_BT_Karaoke_SDK版本简要说明：
+       1.支持多路音源同时输入：BT+LINEIN+MIC+USB_AUDIO+I2S_IN；
+       2.支持多路音源同时输出：DAC0+DAC1+I2S_OUT+USB_OUT；
+       3.支持特效音播放；
+       4.支持BT,U盘，TF卡，光纤，同轴，HDMI功能多选1；
+       5.因为flash 容量限制及MIPS资源问题，目前版本暂不支持USB/SD卡解码功能；
+       6.试用直播声卡，K歌宝，拖箱等需要特效音及多路音源等产品应用场合；
+-----------------------------------------------------------------------------------------
+
+                                  发布版本修改说明
+-----------------------------------------------------------------------------------------
+2025-02-27【MVsB1_BT_Karaoke_SDK_v0.3.3】 
+基于MVsB1_BT_Audio_SDK_v0.3.3版本定制；
+1.音效版本更新到V2.45.5：
+   1）添加动态EQ，虚拟环绕，LR平衡，VAD,Filter Butterworth,tremolo,howling_suppressor_specified等音效  
+   2)  新增DRC_legacy模块v3.1.1，即之前DRC模块v3.1.0的兼容版
+   3）优化plate reverb特定情况下的溢出失真问题
+   4)  优化howling_suppressor_fine,blue_ns,echo模块
+2.新增变速音效接口，见CFG_FUNC_TSM_EN；
+3.解码器版本更新到V8.12.0;
+4.完善HFP通话下I2S相关配置;
+5.取消音效模式数量限制（例如超过256个）；
+6.新增EQ_DRC复合体实现高低音功能，见CFG_RES_USE_EQ_DRC_TREB_BASS_EN；
+7.完善I2S MIX相关功能；
+8.新增USB MIDI接口,见CFG_FUNC_USB_MIDE_EN部分；
+9.完善P系列芯片型号选型，P系列芯片允许超频到360M
+10.TF卡检测稳定性完善；
+11.deepsleep唤醒相关完善；
+12.otg检测相关完善；
+13.修复关闭BT_FAST_POWER_ON_OFF_FUNC，切换出蓝牙模式，出现蓝牙可见性异常的问题
+注意：
+   1）上位机PC Tools请用MVAssistant_V3.4.5或其之后的版本；
+   2）上位机MVAssistant请用MVAssistant_V3.4.5或其之后的版本；
+   3）上位机调音工具请用ACPWorkbench_V2.44.2或其之后的版本；
+   4）升级狗请用V6.2.7或其之后的版本固件，硬件版本:FSH_Burner_Lite_V1.2&1.3； 
+   5)  加密狗请用V3.0版本固件；
+   6）机烧硬件本: MACHINE-BURNER-V1.2；机烧固件版本: B-79；
+   7）手工硬件本: OTP-PR-NEW-V1.5；手工固件版本: B-80；
+   8）蓝牙测试盒固件版本请用V0.2.7或其之后的版本；
+-----------------------------------------------------------------------------------------
+2024-04-30【MVsB1_BT_Karaoke_SDK_v0.3.1】 
+基于MVsB1_BT_Audio_SDK_v0.3.1版本定制；
+1.音效版本更新到V2.38.0：
+    完善如下音效：PCM Delay，auto-tune，Echo，Silence Detector,Pitch Shifter Pro,Voice Changer Pro,
+    增加如下音效：tremolo,Robot Tone,Noise Generator;VB Surround;
+2.I2S MIX部分完善；
+注意：
+   1）上位机PC Tools请用V2.2.19或其之后的版本；
+   2）上位机MVAssistant请用MV_Assisant_Tools_2021_V3.0.9或其之后的版本；
+   3）上位机调音工具请用ACPWorkbench_V2.39.12或其之后的版本；
+   4）升级狗请用V6.2.7版本固件，硬件版本:FSH_Burner_Lite_V1.2&1.3；
+   5) 加密狗请用V3.0版本固件；
+   6）机烧硬件本: MACHINE-BURNER-V1.1；机烧固件版本: B-69；
+   7）手工硬件本: OTP-PR-NEW-V1.5；手工固件版本: B-70；
+   8）蓝牙测试盒固件版本请用V0.2.7或其之后的版本；
+-----------------------------------------------------------------------------------------
+2023-07-13【MVsB1_BT_Karaoke_SDK_v0.3.0】 
+基于MVsB1_BT_Audio_SDK_v0.3.0版本定制；
+1.download 更新到v2.5版本，支持双key和普通版本
+2.flash boot更新到v2.2.6版本；
+3.兼容AP1048芯片，通过宏 CHIP_AP10XX_P2 来控制，打开选择AP1048P2芯片;
+4.完善CFG_FUNC_I2S_MIX_MODE部分；
+5.完善usb audio部分的src部分；
+6.增加CFG_FUNC_MIX_AUDIO_SDCT_EN选项；
+7.完善CFG_FUNC_REMIND_MIX_MODE相关代码;
+注意：
+   1）上位机PC Tools请用V2.2.19或其之后的版本；
+   2）上位机MVAssistant请用MV_Assisant_Tools_2021_V3.0.9或其之后的版本；
+   3）上位机调音工具请用ACPWorkbench_V2.39.9或其之后的版本；
+   4）升级狗请用V6.2.1版本固件，硬件版本:FSH_Burner_Lite_V1.2&1.3；
+   5) 加密狗请用V3.0版本固件；
+   6）机烧硬件本: MACHINE-BURNER-V1.1；机烧固件版本: B-69；
+   7）手工硬件本: OTP-PR-NEW-V1.5；手工固件版本: B-70；
+   8）蓝牙测试盒固件版本请用V0.2.7或其之后的版本；
+-----------------------------------------------------------------------------------------
+2023-03-24【MVsB1_BT_Karaoke_SDK_V0.1.5】 
+1. 增加BT_PROFILE_BQB_ENABLE用于开启BQB认证测试(量产版本需要关闭此宏)
+2. 增加通过HFP命令获取时间(苹果手机)功能，见BT_HFP_GET_APPLE_DEV_TIME
+3. 增加SCMS-T协议支持，见BT_SCMS_ENABLE部分
+4. 修复整理三方通话，解决一些进不了/退不出/通话状态不匹配问题
+5. 录音相关问题 
+6. 解决5.1格式的wav播放异常问题
+7. flash下载驱动更新到b1_download_v1.9，兼容内置同芯型号flash
+8. 增加非标U盘文件播放支持选项，兼容性更好，见CFG_FUNC_NON_STANDARD_EN部分
+9. 完善P04补丁的Usb声卡杂音问题
+注意：
+   1）上位机PC Tools请用V2.2.15版本；
+   2）上位机MVAssistant请用MVAssistant_BP10XX_V1.8.18版本；
+   3）上位机调音工具请用ACPWorkbench_V2.29.2版本；
+   4）蓝牙测试盒固件版本请用V0.2.7及其之后的版本！！！！
+-----------------------------------------------------------------------------------------
+*2022-06-24  【MVsB1_BT_Karaoke_SDK_V0.1.4】
+1.更新MVsB1_BT_Audio_SDK_v0.1.12+P03+P04相关内容；
+2.更新i2s相关配置代码(i2s_api.c中）;
+3.通话相关提示音改为16K采样率;
+4.完善通话无声问题;
+相关工具版本请用：
+   1）上位机PC Tools请用V2.2.15版本；
+   2）上位机MVAssistant请用MVAssistant_BP10XX_V1.8.15版本；
+   3）上位机调音工具请用ACPWorkbench_V2.29.2版本；
+   4）蓝牙测试盒固件版本请用V0.2.7及其之后的版本！！！
+-----------------------------------------------------------------------------------------
+*2021-12-06  【MVsB1_BT_Karaoke_SDK_V0.1.3】
+1.更新flash兼容性补丁V1.0~V1.1;
+2.更新MVsB1_BT_Audio_SDK_v0.1.12+P01+P02相关内容；
+3.spi flash时钟改为96M配置，提高系统运行速度；
+4.更新蓝牙lib到v2.8.13版本：
+   1）解决手机主动连接BP10，BP10回连手机，调用FastPowerOn/Off函数会出现死机问题;
+   2）修改蓝牙测试盒校准机制，对ECO1芯片不设置校准范围;
+   3)  针对ECO0和ECO1芯片单独设置不同的缺省频偏值；
+   4)  完善 鸿蒙系统手机兼容性问题；
+   5）增加蓝牙测试盒频偏校正后直接显示TRIM值的功能（配V0.2.7固件版本的测试盒)；
+5.OTG相关完善：
+  1）解决USB mic上传 失真问题；
+  2）解决USB声卡下行 pop声问题；
+  3）完善ipad的otg兼容性（mic无法上传);
+  4）完善读卡器功能无效问题：增加SD卡初始化处理；
+  5）完善deepsleep后再开机，usb声卡不识别的问题；
+6.完善调节gain有哒哒干扰声问题；
+7.统一dma使能表的默认设置：完善i2s打开后系统运行异常问题;
+8.CFG_FUNC_I2S_MIX_MODE相关部分取消master/slave选项（由调音参数决定）；
+9.更新提示音部分：
+  1）remind_file文件夹中直接用Mp3格式即可（默认44.1K采样率，48Kbps,单声道）；
+  2）编译OK后，会自动生成all.bin（mp2格式内容）；
+相关工具版本请用：
+   1）上位机PC Tools请用V2.2.15版本；
+   2）上位机MVAssistant请用MVAssistant_BP10XX_V1.8.11版本；
+   3）上位机调音工具请用ACPWorkbench_V2.29.2版本；
+   4）蓝牙测试盒固件版本请用V0.2.7及其之后的版本！！！
+-----------------------------------------------------------------------------------------
+*2020-12-16  【MVsB1_BT_Karaoke_SDK_V0.1.2】
+1.音效相关更新：
+   1）(重要)更新V1.35.1版本音效lib：完善plate reverb,frequency shifter相关噪声问题；
+   2）(重要)Mic Expander之前增加Mic Pre Eq，完善expander打开导致的声音卡顿问题；
+           注意：Mic Pre Eq主要是配合expander来使用，filter类型一定要选择highpass，不能作为普通eq来调音之用！！！！
+2.(重要)完善bt未连接时，linein无声的问题；
+3.(重要)flash boot更新到v2.1.8版本：增加tf卡/U盘升级全部擦除功能选项；
+4.(重要)提升APB总线时钟到30M左右，完善多路DMA应用的效率问题及蓝牙兼容性问题；
+5.(重要)完善软件微调处理（完善杂音问题）；
+6.(重要)完善bt回连Pc兼容性；
+7.OTG相关更新：
+   1）(重要)完善电音模式下开机后otg无法识别的问题；
+   2）手机端给OTG设备充电电流设定为50MA（完善连iphone后OTG不工作问题）；
+   3）完善OTG上下曲等命令有时无效问题；
+   4）完善OTG转采样处理；
+8.完善mic通道上电冲击声问题；
+9.增加电位器同步处理；
+10.完善Fade处理buffer分配，优化ram消耗；
+11.完善CFG_FUNC_LINE_MIX_MODE部分代码（music vol调节Linein音量不变化问题);
+12.waiting mode增加音效解析处理；
+13.消息队列数目改大到32；
+14.更新HDMI部分：完善兼容性问题，增加后插先播功能；
+15.更新MVsB1_BT_Audio_SDK_v0.1.11_P04~P06补丁内容；
+相关工具版本请用：
+   1）上位机PC Tools请用V2.2.5版本；
+   2）上位机MVAssistant请用MVAssistant_BP10XX_V1.8.6版本；
+   3）上位机调音工具请用ACPWorkbench_V2.24.0版本；
+   4）蓝牙测试盒固件版本请用V0.2.2及其之后的版本！！！
+-----------------------------------------------------------------------------------------
+*2020-09-01  【MVsB1_BT_Karaoke_SDK_V0.1.1】
+1. USB相关更新：
+  1）完善USB供电方式上电后无法识别USB设备问题；
+  2）完善USB上传录音杂音问题;
+  3） 完善OTG开启录音时，前1秒音源无法录音的问题;
+  4）修改USB声卡48K采样率播放杂音及死机问题；
+2. 完善mp2提示音音量不受控的问题（CFG_FUNC_REMIND_MIX_MODE);
+3 .修改调音工具上显示karaoke sdk名称;
+4. 更新音效参数（统一硬件相关参数），系统Volume默认最大；
+5. 完善I2S相关DMA分配及编译err问题；
+6.修改关闭宏 CFG_RES_AUDIO_DACX_EN编译出错的问题；
+7. 更新MVsB1_BT_Audio_SDK_v0.1.11_P01~P03补丁内容：
+相关工具版本请用：
+   1）上位机PC Tools请用V2.2.5版本；
+   2）上位机MVAssistant请用MVAssistant_BP10XX_V1.8.5版本；
+   3）上位机调音工具请用ACPWorkbench_V2.21.6版本；
+   4）蓝牙测试盒固件版本请用V0.2.2及其之后的版本！！！
+-----------------------------------------------------------------------------------------
+*2020-07-20  【MVsB1_BT_Karaoke_SDK_V0.1.0】
+1.基于MVsB1_BT_Audio_SDK_v0.1.11版本定制直播karaoke等功能；
+2.相关增加的功能说明：
+  1）CFG_FUNC_REMIND_MIX_MODE对应mp2格式提示音处理，和CFG_FUNC_REMIND_SOUND_EN是2选1；
+  2）CFG_FUNC_LINE_MIX_MODE为LINEIN输入常驻，和CFG_APP_LINEIN_MODE_EN是2选1；
+  3）CFG_FUNC_USB_MIX_MODE为USB声卡常驻，和CFG_APP_USB_AUDIO_MODE_EN是2选1；
+  4）CFG_FUNC_I2S_MIX_MODE为I2S_IN输入常驻，和CFG_APP_I2SIN_MODE_EN是2选1；
+3.mp2格式提示音音源制作说明：
+  1）配套工具：\MVsB1_Base_SDK\tools\remind_script\mp2_tool；应用说明见：readme for mp2.txt
+  2）mp2制作的源文件需要microsoft Adpcm格式，具体可参考这个文件：\MVsB1_Base_SDK\tools\remind_script\mp2_tool\zhangshen
+  3) 准备好需要的microsoft Adpcm格式文件，放在此目录下：\MVsB1_Base_SDK\tools\remind_script\mp2_tool
+  4）再运行如下批处理即会生成mp2格式文件（后缀.mp3）,再copy相关mp2文件（后缀.mp3）到如下目录下并编译：\BT_Audio_APP\remind_file
+  5）编译OK后，会生成提示音bin,在如下目录中：\MVsB1_Base_SDK\tools\remind_script\all.bin
+  6）仿真器或MVAssistant加载提示音地址见flash_config.h中如下定义：#define CONST_DATA_ADDR    		0x130000
+相关工具版本请用：
+   1）上位机PC Tools请用V2.2.5版本；
+   2）上位机MVAssistant请用MVAssistant_BP10XX_V1.8.5版本；
+   3）上位机调音工具请用ACPWorkbench_V2.21.6版本；
+   4）蓝牙测试盒固件版本请用V0.2.2及其之后的版本！！！！
+
+*2020-06-04  【MVsB1_BT_Karaoke_SDK_V0.0.11】
+1.bt相关修改:
+  1) (兼容性相关，重要！！)完善蓝牙手机兼容性、蓝牙测试盒相关问题
+  2) 新增BT_PAGE_TX_POWER_LEVEL，可定制修改回连过程中的tx power,用于减小回连噪声
+2.更新 v2.1.4版本flash boot，修改说明：
+  1）使用的新的lib库，兼容华邦4M flash      
+  2）升级完成后出现概率性的看门狗复位导致标志丢失，现在增加RST_RE_BOOT寄存器来传递升级结果    
+  3）根据flash容量大小来存放于最后的4K处
+3.调音及音效相关更新：
+  1）修改调音工具在线调节Mic Plate Reverb（0x8b）下面的High Cutoff Frequency效果变化不正常的问题
+  2）修改音效模式切换时死机问题（echo打开时）
+  3）更新V1.33.3版本音效库(完善echo delay调节杂音问题）
+4.系统相关更新：
+  1）增加mcps监测log，完善调音工具mcps显示精确度
+  2）upgrade代码优化，去掉GPIOA0/1/6/19/25设置（否则若用户用到此IO，容易出现升级后被改变的问题）
+  3）主频设置的地方取消相关型号的管控，最高可到320M
+5.完善电位器快速滑动会导致出现空白区域不能正确分等级的问题
+注意：
+   1）上位机PC Tools请用V2.2.5版本；
+   2）上位机MVAssistant请用MVAssistant_BP10XX_V1.8.5版本；
+   3）上位机调音工具请用ACPWorkbench_V2.21.6版本；
+   4）蓝牙测试盒固件版本请用V0.2.2及其之后的版本！！！！
+
+*2020-04-12  【MVsB1_BT_Karaoke_SDK_V0.0.10】
+更新内容：
+1.bt相关修改（同步更新到V0.1.9版本主sdk）：
+  1）蓝牙lib更新到蓝牙lib v2.7.7.k
+  2）SpiFlashErase和SpiFlashWrite 都增加suspend进行处理，避免擦除和写操作导致协议栈阻塞时间过长而断开
+  3）新增宏定义BT_AUTO_CLEAR_LAST_PAIRING_LIST，用于手机端取消配对记录，BP10回连手机，被取消后，是否需要清空配对记录的需求
+  4）（蓝牙测试盒相关）针对蓝牙测试盒特定名称设备连接后，不保存配对记录
+  5）（蓝牙测试盒相关）修正 MAC地址配置到bb顺序错误问题
+2.音效相关修改（更新V1.33.1版本音效lib）（同步更新到V0.1.9版本主sdk）；
+3.更新flash boot到V2.1.3版本
+4.完善芯片型号选择（同步更新到V0.1.9版本主sdk）；
+5.完善高温煲机出现的蓝牙播放卡顿问题：晶体谐振电流参数默认设置为13（电流1MA）（同步更新到V0.1.9版本主sdk）；
+6.更新driver.lib到V0.3.5版本；
+7.flash下载驱动更新到：b1_download_v1.3
+注：
+     1）调音工具请用ACPWorkbench_V2.21.4_for_AP82xxDU56xDU26xBPxx版本；
+     2）上位机PC Tools请用V2.2.2版本；
+     3）上位机MVAssistant请用MVAssistant_BP10XX_V1.8.2版本；
+
+*2020-03-20  【MVsB1_BT_Karaoke_SDK_V0.0.9】
+更新内容：
+1.bt相关修改：
+  1）蓝牙lib更新到v2.7.4.k
+  2）新增AAC音频格式
+  3）新增恢复出厂设置相关接口；
+  4）新增DUT测试模式相关接口；
+  5）新增快进快退控制功能
+  6）修改MAC地址从FLASH中获取的顺序(修改为NAP-UAP-LAP)
+  7）修改SetBtDeviceConnMode为SetBtDeviceConnState， GetBtDeviceConnMode改为GetBtDeviceConnState，避免函数名称引起误解；     
+  8）修复回连已知的异常问题
+  9）修改音量同步功能；
+2.更新解码库到V7.7.9版本；
+3.修复I2S1_OUT,I2S0_OUT同时打开导致的复位问题（与mainAppCt.SinkBuf_I2S1判断错误有关)；
+4.修改I20_OUT无声问题。
+5.系统参数同步（AudioEffectParamSync）放在音效初始化之后调用；
+6.修改echo相关死机问题；
+7.修改记忆参数数目改变后无法记忆的问题；
+8.DefaultParamgsInit函数调用前移，防止因系统参数（比如采样率）未初始化导致的异常问题
+注：调音工具请用ACPWorkbench_V2.21.0_for_AP82xxDU56xDU26xBPxx版本；
+
+*2020-01-21  【MVsB1_BT_Karaoke_SDK_V0.0.8】
+更新内容：
+1.音效相关（更新V1.32.0版本音效lib）：
+  1）优化reverb plate,reverb pro相关噪声问题
+  2）升级echo模块至v1.7.0，使其能支持任意长度的delay时间（只要RAM大小允许）
+2.完善I2S做slave无声问题；
+3.增加立体声格式特效音支持（MPA_MAX_CHANNELS要改为2）；
+
+*2020-01-02  【MVsB1_BT_Karaoke_SDK_V0.0.7】
+更新内容：
+1.完善提示音无声问题；
+2.增加外置flash播放提示音（特效音）功能，见CFG_RES_EXTERN_FLASH_REMIND_EN部分；
+
+*2019-11-22  【MVsB1_BT_Karaoke_SDK_V0.0.6】
+更新内容：
+1.完善吉他部分的PinPong无效问题;
+2.完善USB AUDUO的vocal cut功能(需要通过调音工具打开)；
+3.bt部分代码更新：
+  1)bt库版本更新到v2.4.3.k，将频偏校准范围和驱动电流寄存器关联；
+  2)修缮蓝牙擦写函数调用的擦除方式；
+  3)默认蓝牙发射功率修改为0db
+  4)修缮音乐播放快速切换可能存在的POP音；
+4.MVsB1_Base_SDK版本更新到v0.1.3；
+5.调音工具请用ACPWorkbench_V2.18.2版本；
+
+*2019-11-12  【MVsB1_BT_Karaoke_SDK_V0.0.5】
+更新内容：
+1.完善Andes编译慢的问题(批处理每次都会更新remind_sound_item.h导致)
+2.加密后烧录IC提示音异常问题的修复
+3.音效相关：
+  1）更新AudioEffectLibrary至v1.27.1：修改autotune算法（v1.3.0）,增加pitch_accuracy参数供用户选择电音质量等级（默认0）；
+  2）调音工具无法在线调节参数问题的修复
+  3）增加吉他音效相关处理流程及功能，见CFG_FUNC_GUITAR_EN部分
+4.iphone通过OTG线连接提示音电流过大问题修复
+5.完善杂音问题：
+  1）DAC_X输出失真问题的修复
+  2）音效模式切换时杂音问题的修复
+  3）完善USB线拔掉后杂音问题
+6.完善上传录音部分：
+  1）mix部分增加防破音处理；
+  2）取消music_pcm部分数据mix(输入端已做mix,此处重复)
+7.增加A0,A1做串口DEBUG配置
+8.完善USB AUDIO闪避无效问题
+9.bt库版本更新到v2.4.2.k,修改说明见BtStack_history.txt
+
+*2019-10-26  【MVsB1_BT_Karaoke_SDK_V0.0.4_P01】
+更新内容：
+1.完善音效模式切换死机问题；
+2.更新调音参数（需要ACPWorkbench_V2.16.3或之后的版本的调音工具）；
+
+*2019-10-24  【MVsB1_BT_Karaoke_SDK_V0.0.4】
+更新内容：
+1.完善otg杂音问题；
+2.增加i2s_in 微调处理(slave mode);
+3.更新音效库；
+  1）更新电音算法（V1.2.1）；
+  2）增加立体声扩展算法；
+4.更新MVsB1_Base_SDK部分；
+5.调音工具请用ACPWorkbench_V2.16.3或之后的版本；
+  
+
+*2019-10-15  【MVsB1_BT_Karaoke_SDK_V0.0.3】
+更新内容：
+1.增加内存动态分配处理，实现采样帧可在128/256/512之间动态切换，完善MIC延时指标；
+2.内存分配优化，可满足voicechanger+plate reverb应用场景； 
+3.完善I2S部分功能，增加I2S0,I2S1 IN/OUT相关配置接口；
+4.完善OTG部分功能:
+  1)完善手机上传杂音问题；
+  2)完善音效模式切换死机问题；
+  3)修改usb上传通道开启录音时，A0口被拉低问题；
+  4)修改CFG_FUNC_DISPLAY_EN打开后，usb上电检测异常问题；！
+5.新增芯片型号宏，关联MIC、LINEIN PGA配置等
+6.蓝牙相关修改：
+  1) 新增蓝牙快速开关功能(BT_FAST_POWER_ON_OFF_FUNC);
+  2) 新增BtPowerOff/BtPowerOn函数（蓝牙硬开关），用于开关蓝牙；
+  3）新增蓝牙连接、断开消息接口；
+  4）新增蓝牙测试盒整频偏功能并保存参数到Flash；
+  5）完善BT播放卡顿问题；
+  6）完善BT模式下睡眠唤醒问题；
+  7) 增加上电默认断开蓝牙配置接口（默认自动回连蓝牙）；
+  注意：此版本bt部分lib为定制版本，不支持HF,SPP,BLE相关功能！！！！
+7.音效相关修改：
+  1）调音参数更新；
+  2）music部分新增1个EQ(保证DRC前后各有个EQ可调）；
+  3) 修复linein4、linein5解析PGA gain问题;
+  4）修复在线调音某些音效参数设置无效问题；
+  5) 完善AudioMusicVolSet部分：全部source音量同步调整；
+  6）完善特效音无法上传问题； 
+  7）修改音效模式（增加提示音）切换到男声模式后，mic无声； 
+8.完善mic宏关闭后，deepsleep唤醒重启问题；
+9.完善CFG_PARAM_FIXED_REMIND_VOL值修改后，上电无效问题；
+10.更新flash_config.h中数据保存位置及更新蓝牙参数表中的排序,释放更多flash空间存放用户数据；
+11.调音工具版本请用：ACPWorkbench_V2.15.0_for_BPxx；
+12.Pc tools请用：MV_AP82xx_BP10xx_PC_Tools_V2.0。
+
+*2019-7-11  【MVsB1_BT_Karaoke_SDK_V0.0.2】
+
+1、版本号对应SVN1291；
+2、实现BT+LININ+MIC+USB_AUDIO输入源功能；
+3、实现特效音功能；
+4、完善内存动态分配处理，实现128/256/512采样帧动态切换；
+5、完善光纤，同轴，HDMI相关功能（默认关闭）；
+6、建议不带U盘，SD卡功能相关的产品用此版本开发（例如直播声卡）；
+7、配套调音工具:ACPWorkbench_V2.14.1_for_BPxx.
+
+
+
+
