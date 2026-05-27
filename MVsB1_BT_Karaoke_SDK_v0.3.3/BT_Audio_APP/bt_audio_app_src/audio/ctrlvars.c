@@ -36,19 +36,10 @@ ControlVariablesContext gCtrlVars;
 #ifdef BT_TWS_SUPPORT
 const AUDIO_EFF_PARAMAS EFFECT_TAB[18]={
 #else
-const AUDIO_EFF_PARAMAS EFFECT_TAB[11]={
+const AUDIO_EFF_PARAMAS EFFECT_TAB[2]={
 #endif
 #ifdef CFG_FUNC_MIC_KARAOKE_EN	
 	{EFFECT_MODE_HunXiang,         HunXiang,   sizeof(HunXiang),  "HunXiang"},
-	{EFFECT_MODE_DianYin,          DianYin,    sizeof(DianYin),   "DianYin"},
-	{EFFECT_MODE_HanMai,           HanMai,     sizeof(HanMai),    "HanMai"},
-	{EFFECT_MODE_MoYin,            MoYin,      sizeof(MoYin),     "MoYin"},
-	{EFFECT_MODE_NanBianNv,        NanBianNv,  sizeof(NanBianNv), "NanBianNv"},
-	{EFFECT_MODE_NvBianNan,        NvBianNan,  sizeof(NvBianNan), "NvBianNan"},
-	{EFFECT_MODE_WaWaYin,          WaWaYin,    sizeof(WaWaYin),   "WaWaYin"},
-	{EFFECT_MODE_YuanSheng,        YuanSheng,  sizeof(YuanSheng), "YuanSheng"},
-	{EFFECT_MODE_HFP_AEC,	       AECBuf,     sizeof(AECBuf), 	  "AECBuf"},
-	{EFFECT_MODE_USB_AEC,	       UsbAecBuf,  sizeof(UsbAecBuf), "UsbAecBuf"},
 	#ifdef BT_TWS_SUPPORT
 	{EFFECT_MODE_HunXiang_Slave,   HunXiang_Slave,   sizeof(HunXiang_Slave),  "HunXiang_Slave"},
 	{EFFECT_MODE_DianYin_Slave,    DianYin_Slave,    sizeof(DianYin_Slave),   "DianYin_Slave"},

@@ -269,6 +269,8 @@ void Timer2Interrupt(void)
 		}
 	}
 #endif
+	extern void CodeKeyCheckInTimer(void);
+	CodeKeyCheckInTimer();
 }
 
 #ifdef CFG_FUNC_LED_REFRESH
@@ -281,7 +283,7 @@ void Timer6Interrupt(void)
 	//关键字    __attribute__((section(".tcm_section")))
 	//客户需要将自己的实现的API代码添加关键字
 	//GPIO_RegOneBitSet(GPIO_A_TGL, GPIO_INDEX2);
-	LedFlushDisp();
+	// LedFlushDisp();
 }
 #endif
 

@@ -116,7 +116,7 @@ static void DisplayServiceEntrance(void * param)
 				displayServiceCt.serviceState = TaskStatePaused;
 				msgSend.msgId		= MSG_DISPLAY_SERVICE_PAUSED;
 				MessageSend(displayServiceCt.parentMsgHandle, &msgSend);
-				DispDeInit();
+				// DispDeInit();
 				break;
 			case MSG_TASK_RESUME:
 #if defined(CFG_FUNC_DISPLAY_EN)

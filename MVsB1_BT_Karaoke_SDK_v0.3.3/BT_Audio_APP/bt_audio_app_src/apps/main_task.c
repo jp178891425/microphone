@@ -1874,133 +1874,133 @@ void CommonMsgProccess(uint16_t Msg)
 
 		#ifdef CFG_FUNC_MIC_KARAOKE_EN
 		case MSG_EFFECTMODE:
-			if(mainAppCt.MState == ModeStateWork && !SoftFlagGet(SoftFlagEffectChange))
-			{
-				APP_DBG("MSG_EFFECTMODE\n");
-				if(mainAppCt.appCurrentMode == AppModeBtHfPlay)//蓝牙通话模式下，不支持音效模式切换
-				{
-					break;
-				}
-				if(mainAppCt.appCurrentMode == AppModeUsbPhone)//usb通话模式下，不支持音效模式切换
-				{
-					break;
-				}
-#ifdef CFG_FUNC_DOWNDLOAD_EFF_TO_FLASH
-				mainAppCt.EffectMode++;
-				extern uint8_t flash_effect_total;
-				if(mainAppCt.EffectMode >= flash_effect_total)
-				{
-					mainAppCt.EffectMode = 0;
-				}
+// 			if(mainAppCt.MState == ModeStateWork && !SoftFlagGet(SoftFlagEffectChange))
+// 			{
+// 				APP_DBG("MSG_EFFECTMODE\n");
+// 				if(mainAppCt.appCurrentMode == AppModeBtHfPlay)//蓝牙通话模式下，不支持音效模式切换
+// 				{
+// 					break;
+// 				}
+// 				if(mainAppCt.appCurrentMode == AppModeUsbPhone)//usb通话模式下，不支持音效模式切换
+// 				{
+// 					break;
+// 				}
+// #ifdef CFG_FUNC_DOWNDLOAD_EFF_TO_FLASH
+// 				mainAppCt.EffectMode++;
+// 				extern uint8_t flash_effect_total;
+// 				if(mainAppCt.EffectMode >= flash_effect_total)
+// 				{
+// 					mainAppCt.EffectMode = 0;
+// 				}
 
-#else
-				if(mainAppCt.EffectMode < EFFECT_MODE_WaWaYin)
-				{
-					mainAppCt.EffectMode++;
-				}
-				else
-				{
-					mainAppCt.EffectMode = EFFECT_MODE_HunXiang;
-				}
-#endif
-				APP_DBG("EffectMode = %d\n", mainAppCt.EffectMode);
-				switch(mainAppCt.EffectMode)
-				{
-					case EFFECT_MODE_HunXiang:
-#ifdef CFG_FUNC_REMIND_SOUND_EN
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindSoundServiceItemRequest(SOUND_REMIND_LIUXINGH,REMIND_ATTR_NORMAL);
-#else
-	#ifdef CFG_FUNC_REMIND_MIX_MODE
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindMixServiceItemRequest(SOUND_REMIND_LIUXINGH,TRUE);
-	#endif
-#endif
-						break;
-					case EFFECT_MODE_DianYin:
-#ifdef CFG_FUNC_REMIND_SOUND_EN
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindSoundServiceItemRequest(SOUND_REMIND_DIANYIN,REMIND_ATTR_NORMAL);
-#else
-	#ifdef CFG_FUNC_REMIND_MIX_MODE
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindMixServiceItemRequest(SOUND_REMIND_DIANYIN,TRUE);
-	#endif
-#endif
-						break;
-					case EFFECT_MODE_MoYin:
-#ifdef CFG_FUNC_REMIND_SOUND_EN
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindSoundServiceItemRequest(SOUND_REMIND_MOYIN,REMIND_ATTR_NORMAL);
-#else
-	#ifdef CFG_FUNC_REMIND_MIX_MODE
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindMixServiceItemRequest(SOUND_REMIND_MOYIN,TRUE);
-	#endif
-#endif
-						break;
-					case EFFECT_MODE_HanMai:
-#ifdef CFG_FUNC_REMIND_SOUND_EN
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindSoundServiceItemRequest(SOUND_REMIND_HANMAI,REMIND_ATTR_NORMAL);
-#else
-	#ifdef CFG_FUNC_REMIND_MIX_MODE
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindMixServiceItemRequest(SOUND_REMIND_HANMAI,TRUE);
-	#endif
-#endif
-						break;
-					case EFFECT_MODE_NanBianNv:
-#ifdef CFG_FUNC_REMIND_SOUND_EN
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindSoundServiceItemRequest(SOUND_REMIND_NVSHEN,REMIND_ATTR_NORMAL);
-#else
-	#ifdef CFG_FUNC_REMIND_MIX_MODE
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindMixServiceItemRequest(SOUND_REMIND_NVSHEN,TRUE);
-	#endif
-#endif
-						break;
-					case EFFECT_MODE_NvBianNan:
-#ifdef CFG_FUNC_REMIND_SOUND_EN
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindSoundServiceItemRequest(SOUND_REMIND_NANSHEN,REMIND_ATTR_NORMAL);
-#else
-	#ifdef CFG_FUNC_REMIND_MIX_MODE
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindMixServiceItemRequest(SOUND_REMIND_NANSHEN,TRUE);
-	#endif
-#endif
-						break;
-					case EFFECT_MODE_WaWaYin:
-#ifdef CFG_FUNC_REMIND_SOUND_EN
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindSoundServiceItemRequest(SOUND_REMIND_WAWAYIN,REMIND_ATTR_NORMAL);
-#else
-	#ifdef CFG_FUNC_REMIND_MIX_MODE
-						gCtrlVars.remind_type = REMIND_TYPE_KEY;
-						RemindMixServiceItemRequest(SOUND_REMIND_WAWAYIN,TRUE);
-					#endif
-#endif
-						break;
+// #else
+// 				if(mainAppCt.EffectMode < EFFECT_MODE_WaWaYin)
+// 				{
+// 					mainAppCt.EffectMode++;
+// 				}
+// 				else
+// 				{
+// 					mainAppCt.EffectMode = EFFECT_MODE_HunXiang;
+// 				}
+// #endif
+// 				APP_DBG("EffectMode = %d\n", mainAppCt.EffectMode);
+// 				switch(mainAppCt.EffectMode)
+// 				{
+// 					case EFFECT_MODE_HunXiang:
+// #ifdef CFG_FUNC_REMIND_SOUND_EN
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindSoundServiceItemRequest(SOUND_REMIND_LIUXINGH,REMIND_ATTR_NORMAL);
+// #else
+// 	#ifdef CFG_FUNC_REMIND_MIX_MODE
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindMixServiceItemRequest(SOUND_REMIND_LIUXINGH,TRUE);
+// 	#endif
+// #endif
+// 						break;
+// 					case EFFECT_MODE_DianYin:
+// #ifdef CFG_FUNC_REMIND_SOUND_EN
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindSoundServiceItemRequest(SOUND_REMIND_DIANYIN,REMIND_ATTR_NORMAL);
+// #else
+// 	#ifdef CFG_FUNC_REMIND_MIX_MODE
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindMixServiceItemRequest(SOUND_REMIND_DIANYIN,TRUE);
+// 	#endif
+// #endif
+// 						break;
+// 					case EFFECT_MODE_MoYin:
+// #ifdef CFG_FUNC_REMIND_SOUND_EN
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindSoundServiceItemRequest(SOUND_REMIND_MOYIN,REMIND_ATTR_NORMAL);
+// #else
+// 	#ifdef CFG_FUNC_REMIND_MIX_MODE
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindMixServiceItemRequest(SOUND_REMIND_MOYIN,TRUE);
+// 	#endif
+// #endif
+// 						break;
+// 					case EFFECT_MODE_HanMai:
+// #ifdef CFG_FUNC_REMIND_SOUND_EN
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindSoundServiceItemRequest(SOUND_REMIND_HANMAI,REMIND_ATTR_NORMAL);
+// #else
+// 	#ifdef CFG_FUNC_REMIND_MIX_MODE
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindMixServiceItemRequest(SOUND_REMIND_HANMAI,TRUE);
+// 	#endif
+// #endif
+// 						break;
+// 					case EFFECT_MODE_NanBianNv:
+// #ifdef CFG_FUNC_REMIND_SOUND_EN
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindSoundServiceItemRequest(SOUND_REMIND_NVSHEN,REMIND_ATTR_NORMAL);
+// #else
+// 	#ifdef CFG_FUNC_REMIND_MIX_MODE
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindMixServiceItemRequest(SOUND_REMIND_NVSHEN,TRUE);
+// 	#endif
+// #endif
+// 						break;
+// 					case EFFECT_MODE_NvBianNan:
+// #ifdef CFG_FUNC_REMIND_SOUND_EN
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindSoundServiceItemRequest(SOUND_REMIND_NANSHEN,REMIND_ATTR_NORMAL);
+// #else
+// 	#ifdef CFG_FUNC_REMIND_MIX_MODE
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindMixServiceItemRequest(SOUND_REMIND_NANSHEN,TRUE);
+// 	#endif
+// #endif
+// 						break;
+// 					case EFFECT_MODE_WaWaYin:
+// #ifdef CFG_FUNC_REMIND_SOUND_EN
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindSoundServiceItemRequest(SOUND_REMIND_WAWAYIN,REMIND_ATTR_NORMAL);
+// #else
+// 	#ifdef CFG_FUNC_REMIND_MIX_MODE
+// 						gCtrlVars.remind_type = REMIND_TYPE_KEY;
+// 						RemindMixServiceItemRequest(SOUND_REMIND_WAWAYIN,TRUE);
+// 					#endif
+// #endif
+// 						break;
 
-					default:
-						break;
-				}
-				AudioCoreAppSourceVolSetZero();
-#ifdef CFG_FUNC_DOWNDLOAD_EFF_TO_FLASH
-				AudioEffectModeSel(mainAppCt.EffectMode, 2);//0=init hw,1=effect,2=hw+effect
-#else
-				AudioEffectModeSel(mainAppCt.EffectMode, 1);//0=init hw,1=effect,2=hw+effect
-#endif
-				{
-					extern TIMER EffectChangeTimer;
-					TimeOutSet(&EffectChangeTimer, 500);//临时修改方案，保证音效模式频繁切换时，能规避死机现象(恢复为500ms超时等待处理)
-				}
-				#ifdef CFG_FUNC_BREAKPOINT_EN
-				BackupInfoUpdata(BACKUP_SYS_INFO);
-				#endif
-			}
+// 					default:
+// 						break;
+// 				}
+// 				AudioCoreAppSourceVolSetZero();
+// #ifdef CFG_FUNC_DOWNDLOAD_EFF_TO_FLASH
+// 				AudioEffectModeSel(mainAppCt.EffectMode, 2);//0=init hw,1=effect,2=hw+effect
+// #else
+// 				AudioEffectModeSel(mainAppCt.EffectMode, 1);//0=init hw,1=effect,2=hw+effect
+// #endif
+// 				{
+// 					extern TIMER EffectChangeTimer;
+// 					TimeOutSet(&EffectChangeTimer, 500);//临时修改方案，保证音效模式频繁切换时，能规避死机现象(恢复为500ms超时等待处理)
+// 				}
+// 				#ifdef CFG_FUNC_BREAKPOINT_EN
+// 				BackupInfoUpdata(BACKUP_SYS_INFO);
+// 				#endif
+// 			}
 			break;
 
 		case MSG_MIC_FIRST:
@@ -3765,22 +3765,25 @@ void SysVarInit(void)
 	#endif
 
 	mainAppCt.MusicVolume = pBpSysInfo->MusicVolume;
-	if(mainAppCt.MusicVolume > CFG_PARA_MAX_VOLUME_NUM) 
-	{
-		mainAppCt.MusicVolume = CFG_PARA_MAX_VOLUME_NUM;
-	}
-	APP_DBG("MusicVolume:%d,%d\n", mainAppCt.MusicVolume, pBpSysInfo->MusicVolume);	
+	mainAppCt.MusicVolume = CFG_PARA_MAX_VOLUME_NUM;
+	// if(mainAppCt.MusicVolume > CFG_PARA_MAX_VOLUME_NUM) 
+	// {
+	// 	mainAppCt.MusicVolume = CFG_PARA_MAX_VOLUME_NUM;
+	// }
+	// APP_DBG("MusicVolume:%d,%d\n", mainAppCt.MusicVolume, pBpSysInfo->MusicVolume);	
 	
-	#ifdef CFG_FUNC_MIC_KARAOKE_EN
-	mainAppCt.EffectMode = pBpSysInfo->EffectMode;
-	if((mainAppCt.EffectMode > EFFECT_MODE_WaWaYin) || (mainAppCt.EffectMode <= 10))
-	{
-		mainAppCt.EffectMode = EFFECT_MODE_HunXiang;
-	}
-	#else
-	mainAppCt.EffectMode = EFFECT_MODE_NORMAL;
-	#endif
+	// #ifdef CFG_FUNC_MIC_KARAOKE_EN
+	// mainAppCt.EffectMode = pBpSysInfo->EffectMode;
+	// if((mainAppCt.EffectMode > EFFECT_MODE_WaWaYin) || (mainAppCt.EffectMode <= 10))
+	// {
+	// 	mainAppCt.EffectMode = EFFECT_MODE_HunXiang;
+	// }
+	// #else
+	// mainAppCt.EffectMode = EFFECT_MODE_NORMAL;
+	// #endif
 	
+	mainAppCt.EffectMode = EFFECT_MODE_HunXiang;
+
 	#ifdef CFG_FUNC_DOWNDLOAD_EFF_TO_FLASH
 	extern uint8_t flash_effect_total;
 	flash_effect_total = sizeof(FLASH_EFFECT_TAB)/sizeof(FLASH_EFFECT_TAB[0])-2;//no aec
@@ -3792,13 +3795,16 @@ void SysVarInit(void)
 	#endif	
 	APP_DBG("EffectMode:%d,%d\n", mainAppCt.EffectMode, pBpSysInfo->EffectMode);
 	
-	mainAppCt.MicVolume = pBpSysInfo->MicVolume;
-	if(mainAppCt.MicVolume > CFG_PARA_MAX_VOLUME_NUM) 
-	{
-		mainAppCt.MicVolume = CFG_PARA_MAX_VOLUME_NUM;
-	}
+	// mainAppCt.MicVolume = pBpSysInfo->MicVolume;
+	// if(mainAppCt.MicVolume > CFG_PARA_MAX_VOLUME_NUM) 
+	// {
+	// 	mainAppCt.MicVolume = CFG_PARA_MAX_VOLUME_NUM;
+	// }
+	// mainAppCt.MicVolumeBak = mainAppCt.MicVolume;
+	// APP_DBG("MicVolume:%d,%d\n", mainAppCt.MicVolume, pBpSysInfo->MicVolume);
+
+	mainAppCt.MicVolume = CFG_PARA_MAX_VOLUME_NUM;
 	mainAppCt.MicVolumeBak = mainAppCt.MicVolume;
-	APP_DBG("MicVolume:%d,%d\n", mainAppCt.MicVolume, pBpSysInfo->MicVolume);
 
 	#ifdef CFG_APP_BT_MODE_EN
 	mainAppCt.HfVolume = pBpSysInfo->HfVolume;
@@ -3823,13 +3829,13 @@ void SysVarInit(void)
 	APP_DBG("EqMode:%d,%d\n", mainAppCt.EqMode, pBpSysInfo->EqMode);
 	#endif
 
-	mainAppCt.ReverbStep = pBpSysInfo->ReverbStep;
-    if(mainAppCt.ReverbStep > MAX_MIC_REVB_STEP)
-	{
-		mainAppCt.ReverbStep = MAX_MIC_REVB_STEP;
-	}
-	mainAppCt.ReverbStepBak = mainAppCt.ReverbStep;
-	APP_DBG("ReverbStep:%d,%d\n", mainAppCt.ReverbStep, pBpSysInfo->ReverbStep);
+	// mainAppCt.ReverbStep = pBpSysInfo->ReverbStep;
+    // if(mainAppCt.ReverbStep > MAX_MIC_REVB_STEP)
+	// {
+	// 	mainAppCt.ReverbStep = MAX_MIC_REVB_STEP;
+	// }
+	// mainAppCt.ReverbStepBak = mainAppCt.ReverbStep;
+	// APP_DBG("ReverbStep:%d,%d\n", mainAppCt.ReverbStep, pBpSysInfo->ReverbStep);
 	
 	#ifdef CFG_FUNC_MIC_TREB_BASS_EN	
     mainAppCt.MicBassStep = pBpSysInfo->MicBassStep;

@@ -92,7 +92,7 @@
 // #define	CFG_APP_CARD_PLAY_MODE_EN
 
 /**线路输入模式**/
-//#define CFG_APP_LINEIN_MODE_EN
+// #define CFG_APP_LINEIN_MODE_EN
 
 #ifdef CFG_APP_LINEIN_MODE_EN
 	#if defined(CFG_CHIP_BP1064A2) || defined(CFG_CHIP_BP1064L2) || defined(CFG_CHIP_BP10128)
@@ -118,7 +118,7 @@
 //#define CFG_APP_HDMIIN_MODE_EN
 
 /**蓝牙功能**/
-#define CFG_APP_BT_MODE_EN
+// #define CFG_APP_BT_MODE_EN
 
 #if (defined(CHIP_AP10XX_P2) && defined(CFG_APP_BT_MODE_EN))
        #error  " AP1048P2  Not Support BT!!!!!"
@@ -153,7 +153,7 @@
 // #define CFG_APP_COAXIAL_MODE_EN
 
 /**I2SIN输入模式**/
-//#define CFG_APP_I2SIN_MODE_EN
+#define CFG_APP_I2SIN_MODE_EN
 
 //待机模式使能 ，禁止mic和主音源，禁止后插先播，录音，回放等
 //注意不要与CFG_FUNC_REMIND_DEEPSLEEP同时使用
@@ -168,7 +168,7 @@
 #define CFG_RES_AUDIO_DAC0_EN
 
 /**DAC-X通道配置选择**/
-#define CFG_RES_AUDIO_DACX_EN
+// #define CFG_RES_AUDIO_DACX_EN
 
 /**I2S音频输出通道配置选择**/
 //#define CFG_RES_AUDIO_I2SOUT_EN
@@ -386,10 +386,10 @@ printf("Error!! Can't defined CFG_TWS_SOUNDBAR_APP and CFG_TWS_PEER_APP at the s
 //****************************************************************************************
 //#define LOSSLESS_DECODER_HIGH_RESOLUTION//打开后支持高采样率解码，资源消耗较大请自行评估（原始sdk上开启该功能需要关闭"CFG_FUNC_MIC_KARAOKE_EN"宏）
 
-#define USE_MP3_DECODER
-#define USE_WMA_DECODER
-#define USE_SBC_DECODER
-#define USE_WAV_DECODER
+// #define USE_MP3_DECODER
+// #define USE_WMA_DECODER
+// #define USE_SBC_DECODER
+// #define USE_WAV_DECODER
 //#define USE_DTS_DECODER
 //#define USE_A52_DECODER
 //#define USE_FLAC_DECODER	//24bit 1.5Mbps高码率时，需要扩大DECODER_FIFO_SIZE_FOR_PLAYER 输出fifo，或扩大输入：FLAC_INPUT_BUFFER_CAPACITY
@@ -412,14 +412,14 @@ printf("Error!! Can't defined CFG_TWS_SOUNDBAR_APP and CFG_TWS_PEER_APP at the s
 #define CFG_FUNC_AUDIO_EFFECT_EN //总音效使能开关
 #ifdef CFG_FUNC_AUDIO_EFFECT_EN
 
-    #define CFG_FUNC_ECHO_DENOISE          //消除快速调节delay时的杂音，
+    // #define CFG_FUNC_ECHO_DENOISE          //消除快速调节delay时的杂音，
  	//#define CFG_FUNC_MUSIC_EQ_MODE_EN     //Music EQ模式功能配置
 	#ifdef CFG_FUNC_MUSIC_EQ_MODE_EN	    
  		#define CFG_FUNC_EQMODE_FADIN_FADOUT_EN    //EQ模式切换时fade in/fade out处理功能选择,调节EQ模式中有POP声时，建议打开 		
     #endif
-	#define CFG_FUNC_MUSIC_TREB_BASS_EN    		//Music高低音调节功能配置
+	// #define CFG_FUNC_MUSIC_TREB_BASS_EN    		//Music高低音调节功能配置
     //if (CFG_AUDIO_EFFECT_EQ_DRC_STRUCT_EN ==0) ,must ( #undef CFG_RES_USE_EQ_DRC_TREB_BASS_EN )
-    #define CFG_RES_USE_EQ_DRC_TREB_BASS_EN     //define,use eq_drc,  not,use eq
+    // #define CFG_RES_USE_EQ_DRC_TREB_BASS_EN     //define,use eq_drc,  not,use eq
 
 
     //#define CFG_FUNC_SILENCE_AUTO_POWER_OFF_EN     //无信号自动关机功能，
@@ -488,16 +488,16 @@ printf("Error!! Can't defined CFG_TWS_SOUNDBAR_APP and CFG_TWS_PEER_APP at the s
 #ifdef BT_TWS_SUPPORT
 #define CFG_PARA_MIN_SAMPLES_PER_FRAME		(256)//         //系统帧最小值，保证mic delay最小,注意:改为128时 tws带音效播U盘mips余量不足。
 #else
-#define CFG_PARA_MIN_SAMPLES_PER_FRAME		(128)//         //系统帧最小值，保证mic delay最小,注意:改为128时 tws带音效播U盘mips余量不足。
+#define CFG_PARA_MIN_SAMPLES_PER_FRAME		(256)//         //系统帧最小值，保证mic delay最小,注意:改为128时 tws带音效播U盘mips余量不足。
 #endif
-#define CFG_PARA_MAX_SAMPLES_PER_FRAME		(512)//(512)
+#define CFG_PARA_MAX_SAMPLES_PER_FRAME		(256)//(512)
 
 #if (BT_AVRCP_VOLUME_SYNC == ENABLE) && defined(CFG_APP_BT_MODE_EN)
 #define CFG_PARA_MAX_VOLUME_NUM		        (16)	//SDK 16 级音量,针对iphone手机蓝牙音量同步功能定制，音量表16级能一一对应手机端音量级别
 #define CFG_PARA_SYS_VOLUME_DEFAULT			(12)	//SDK默认音量
 #else
 #define CFG_PARA_MAX_VOLUME_NUM		        (32)	//SDK 32 级音量
-#define CFG_PARA_SYS_VOLUME_DEFAULT			(25)	//SDK默认音量
+#define CFG_PARA_SYS_VOLUME_DEFAULT			(32)	//SDK默认音量
 #endif
 
 //****************************************************************************************
@@ -1018,13 +1018,13 @@ printf("Error!! Can't defined CFG_TWS_SOUNDBAR_APP and CFG_TWS_PEER_APP at the s
 #endif
 
 /**编码旋钮按键**/
-//#define	CFG_RES_CODE_KEY_USE
-#ifdef CFG_RES_CODE_KEY_USE
-	#define CFG_CODE_KEY1P_BANK				'A'
-	#define CFG_CODE_KEY1P_PIN				(8)
-	#define CFG_CODE_KEY1N_BANK				'A'
-	#define CFG_CODE_KEY1N_PIN				(9)
-#endif
+#define	CFG_RES_CODE_KEY_USE
+// #ifdef CFG_RES_CODE_KEY_USE
+// 	#define CFG_CODE_KEY1P_BANK				'A'
+// 	#define CFG_CODE_KEY1P_PIN				(29)
+// 	#define CFG_CODE_KEY1N_BANK				'A'
+// 	#define CFG_CODE_KEY1N_PIN				(30)
+// #endif
 
 /**GPIO按键**/
 //#define CFG_RES_IO_KEY_SCAN	
@@ -1085,33 +1085,11 @@ printf("Error!! Can't defined CFG_TWS_SOUNDBAR_APP and CFG_TWS_PEER_APP at the s
 //****************************************************************************************
 //                            Display 显示配置
 //****************************************************************************************
-//#define  CFG_FUNC_DISPLAY_EN
+#define  CFG_FUNC_DISPLAY_EN
 #ifdef CFG_FUNC_DISPLAY_EN
 
-//  #define  DISP_DEV_SLED
-  #define  DISP_DEV_7_LED
-/**8段LED显示操作**/
-/*LED显存刷新需要在Timer1ms中断进行，读写flash操作时会关闭中断*/
-/*所以需要做特殊处理，请关注该宏包含的代码段*/
-/*注意timer中断服务函数和调用到的API必须进入TCM，含调用的所有api，库函数请咨询支持*/
-/*开启此宏，要关注所有使用NVIC_SetPriority 设置为0的代码，避免对应中断调用非TCM代码引起死机复位*/
-#ifdef DISP_DEV_7_LED
-  #define	CFG_FUNC_LED_REFRESH
-#endif
-#ifdef DISP_DEV_SLED
-	#define DISP_LED_INIT()  	    GPIO_PortAModeSet(GPIOA10, 0),\
-                                    GPIO_RegOneBitClear(GPIO_A_PU, GPIOA10),\
-							        GPIO_RegOneBitClear(GPIO_A_PD, GPIOA10),\
-							        GPIO_RegOneBitSet(GPIO_A_OE, GPIOA10),\
-							        GPIO_RegOneBitClear(GPIO_A_IE, GPIOA10),\
-									GPIO_RegOneBitSet(GPIO_A_OUT, GPIOA10)
-   #define DISP_LED_ON()            GPIO_RegOneBitSet(GPIO_A_OUT, GPIOA10)
-   #define DISP_LED_OFF()           GPIO_RegOneBitClear(GPIO_A_OUT, GPIOA10)
-#endif
+#define	CFG_FUNC_LED_REFRESH
 
-#if defined(DISP_DEV_SLED) && defined(DISP_DEV_7_LED)
-   #error Conflict: display setting error //不能同时选择两种显示模式
-#endif
 #endif
 
 //****************************************************************************************

@@ -180,13 +180,7 @@ typedef enum _EFFECT_MODE
     EFFECT_MODE_KTV,
     EFFECT_MODE_BaoYin,
     
-    EFFECT_MODE_HunXiang,    
-    EFFECT_MODE_DianYin,
-    EFFECT_MODE_MoYin,
-    EFFECT_MODE_HanMai,
-    EFFECT_MODE_NanBianNv,
-    EFFECT_MODE_NvBianNan,
-    EFFECT_MODE_WaWaYin,   
+    EFFECT_MODE_HunXiang,
     #ifdef BT_TWS_SUPPORT
 	EFFECT_MODE_HunXiang_Slave,    
     EFFECT_MODE_DianYin_Slave,
@@ -197,9 +191,6 @@ typedef enum _EFFECT_MODE
     EFFECT_MODE_WaWaYin_Slave,
 	EFFECT_MODE_NORMAL_SLAVE,
 	#endif
-	EFFECT_MODE_YuanSheng,
-    EFFECT_MODE_HFP_AEC,
-    EFFECT_MODE_USB_AEC,
     //User can add other effect mode
 } EFFECT_MODE;
 
@@ -1647,8 +1638,9 @@ typedef struct _ControlVariablesContext
 	uint32_t 		    max_reverb_wet_scale;
 	uint32_t 		    max_reverb_roomsize;
 	int32_t			    max_reverb_pro_wet;
-    int32_t             max_reverb_pro_erwet;	
+    int32_t             max_reverb_pro_erwet;
 
+	uint8_t CodeKey;
 }ControlVariablesContext;
 //----------------------------------------//
 #ifdef CFG_FUNC_MUSIC_TREB_BASS_EN
@@ -1694,7 +1686,7 @@ extern const int16_t DeltafTable[8];
 #ifdef BT_TWS_SUPPORT
 extern const AUDIO_EFF_PARAMAS EFFECT_TAB[18];
 #else
-extern const AUDIO_EFF_PARAMAS EFFECT_TAB[11];
+extern const AUDIO_EFF_PARAMAS EFFECT_TAB[2];
 #endif
 extern const AUDIO_EFF_PARAMAS FLASH_EFFECT_TAB[5];
 extern const int32_t DRC_DEFAULT_TABLE[][3];
@@ -1710,14 +1702,6 @@ extern const int32_t EXPANDER_DEFAULT_TABLE[][2];
 extern const int32_t GAIN_CONTROL_TABLE[][16];
 extern const int16_t BassTrebGainTable[16];
 extern const unsigned char HunXiang[2907];
-extern const unsigned char HanMai[2907];
-extern const unsigned char DianYin[2907];
-extern const unsigned char MoYin[2907];
-extern const unsigned char NanBianNv[2907];
-extern const unsigned char NvBianNan[2907];
-extern const unsigned char WaWaYin[2907];
-extern const unsigned char YuanSheng[2907];
-extern const unsigned char Music[1468];
 #ifdef BT_TWS_SUPPORT
 extern const unsigned char HunXiang_Slave[2907];
 extern const unsigned char HanMai_Slave[2907];
@@ -1728,9 +1712,6 @@ extern const unsigned char NvBianNan_Slave[2907];
 extern const unsigned char WaWaYin_Slave[2907];
 extern const unsigned char Music_Slave[1468];
 #endif
-extern const unsigned char AECBuf[599];
-extern const unsigned char UsbAecBuf[599];
-
 //-----system function--------------------------//
 extern EQUnit *eq_unit_aggregate[8];
 extern DRCUnit *drc_unit_aggregate[3];

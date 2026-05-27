@@ -422,12 +422,12 @@ static bool I2SInPlay_Init(MessageHandle parentMsgHandle)
 //i2s0  group_gpio0
 #else //lif (CFG_RES_I2S_IO_PORT==1)
 //i2s1  group_gpio1 
-	GPIO_PortAModeSet(GPIOA7, 5);//mclk out
-	GPIO_PortAModeSet(GPIOA8, 1);//lrclk
-	GPIO_PortAModeSet(GPIOA9, 2);//bclk
-	GPIO_PortAModeSet(GPIOA10, 4);//do
-	GPIO_PortAModeSet(GPIOA11, 2);//di
-	GPIO_RegOneBitSet(GPIO_A_PD, GPIOA10);//set do pull down
+	GPIO_PortAModeSet(GPIOA24, 9);//mclk out
+	GPIO_PortAModeSet(GPIOA20, 1);//lrclk
+	GPIO_PortAModeSet(GPIOA21, 5);//bclk
+	GPIO_PortAModeSet(GPIOA22, 10);//do
+	GPIO_PortAModeSet(GPIOA23, 3);//di
+	GPIO_RegOneBitSet(GPIO_A_PD, GPIOA22);//set do pull down
 //i2s1  group_gpio1 
 #endif
 

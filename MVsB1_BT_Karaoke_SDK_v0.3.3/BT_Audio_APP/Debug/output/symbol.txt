@@ -1,0 +1,1688 @@
+         U AudioHfVolSet
+         U BBMatchReport
+         U BtCntClkSet
+         U BtFreqOffsetAdjustComplete
+         U BtHfTaskPause
+         U BtReconnectStartIsReady
+         U CtxSave
+         U DelayExitBtHfModeCancel
+         U DelayExitBtHfModeSet
+         U EnterBtHfMode
+         U ExitBtHfMode
+         U GetBtPlayState
+         U GetValidSbcDataSize
+         U OLED_Clear
+         U OLED_Init
+         U OLED_ShowChar
+         U btStackConfigParams
+         U getBtHfModeEnterFlag
+         U hfMode3WayActiveCallState
+         U hfModeRestart
+         U hfModeSuspend
+         U osPortMalloc
+         U set_a2dp_stream_suspend
+         U update_btDdb
+00000000 a EILM_BEGIN
+00000000 a NDS_SAG_LMA_EILM
+00000000 W _ITB_BASE_
+00000000 W _RELAX_END_	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:47
+00000000 R flash_data	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/flash_boot.c:9
+00010000 T _start	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:47
+00010000 t exception_vector	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:47
+000100a4 t exception_vector_end	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:379
+000100a4 T stub	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:378
+00010108 t FlashXmcResumeTimeGet
+00010124 t flash_udelay
+000101a0 t flash_delayms
+000101ba t FshcGpioSet
+000101dc t FshcInit
+000101f6 t FshcSendCmd
+0001022a t FshcSpiIOModeCfg
+00010512 t SpiFlashResetCRM
+0001054e t SpiFlashResume
+00010582 t SpiFlashSuspend
+000105b6 t SpiFlashReadId
+000107b8 t SpiFlashReadStatus
+0001085e t SpiFlashIsBusy
+0001087a t SpiFlashWriteStatus
+00010a08 t SpiFlashIOModeCfg
+00010aca t SpiFlashDeepPowerDown
+00010b0e t SpiFlashReleaseFromDeepPowerDown
+00010b42 t SpiFlashWriteUnLock
+00010ca8 t SpiFlashWriteLock
+00010e18 t Flash_GIE_STATE_GET
+00010e20 T IsFlashBusy
+00010e2c T SetFlashBusy
+00010e34 T ClearFlashBusy
+00010e3c T Fshc_WDG_Feed
+00010e4a t Flash_Memset
+00010e5a T FshcClkSwitch
+00010f0a T SpiFlashResumDelaySet
+00010f7e T SpiFlashClkSwitch
+00010f92 t flash_exit_2bitcrm
+00010fbc T ByteRecombineToDword
+00010fd8 T SpiFlashRead
+00011118 T SpiFlashEraseResume
+000111b0 T SpiFlashWrite
+000114d0 T SpiFlashGetStatus
+00011506 T SpiFlashFshcStatusSetIdle
+00011552 T SpiFlashErase
+00011724 T FlashErase
+00011810 T SpiFlashInit
+00011918 T SpiFlashInfoGet
+0001191e T SpiFlashReadUniqueID
+000119f8 T SpiFlashIOCtrl
+00011ac4 r SpiFlash
+00011b78 T em_rd
+00011b86 T em_wr
+00011b98 T em_set
+00011baa T em_rd32p
+00011bb8 T em_wr32p
+00011bc6 T em_rd16p
+00011bd4 T em_wr16p
+00011be2 T em_rd8p
+00011bec T em_wr8p
+00011bf8 T set_bt_bdaddr
+00011c12 T co_read32
+00011c16 T co_read16
+00011c1a T co_write32
+00011c1e T co_write16
+00011c22 T co_write8
+00011c26 T co_read16p
+00011c30 T co_read24p
+00011c40 T co_write24p
+00011c4e T co_read32p
+00011c64 T co_write32p
+00011c78 T co_write16p
+00011c80 T co_bdaddr_compare
+00011c9a T co_slot_to_duration
+00011ca6 T co_nb_good_channels
+00011cd0 R co_null_bdaddr
+00011cd8 R co_sca2ppm
+00011ce8 R one_bits
+00011cf8 t ISR_TABLE	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:62
+00011d74 t OS_Trap_TLB_Fill	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:104
+00011d88 t OS_Trap_PTE_Not_Present	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:108
+00011d9c t OS_Trap_TLB_Misc	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:112
+00011db0 t OS_Trap_TLB_VLPT_Miss	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:117
+00011dc4 t OS_Trap_Machine_Error	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:121
+00011dd8 t OS_Trap_Debug_Related	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:125
+00011dec t OS_Trap_General_Exception	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:129
+00011e00 t OS_Trap_Syscall	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:133
+00011e14 t OS_Trap_Int_Comm	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:136
+00011f00 t OS_Trap_Interrupt_HW0	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:146
+00011f0c t OS_Trap_Interrupt_HW1	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:151
+00011f18 t OS_Trap_Interrupt_HW2	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:156
+00011f24 t OS_Trap_Interrupt_HW3	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:161
+00011f30 t OS_Trap_Interrupt_HW4	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:166
+00011f3c t OS_Trap_Interrupt_HW5	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:177
+00011f64 t OS_Trap_Interrupt_HW6	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:182
+00011f70 t OS_Trap_Interrupt_HW7	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:187
+00011f7c t OS_Trap_Interrupt_HW8	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:192
+00011f88 t OS_Trap_Interrupt_HW9	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:197
+00011f94 t OS_Trap_Interrupt_HW10	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:202
+00011fa0 t OS_Trap_Interrupt_HW11	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:207
+00011fac t OS_Trap_Interrupt_HW12	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:212
+00011fb8 t OS_Trap_Interrupt_HW13	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:217
+00011fc4 t OS_Trap_Interrupt_HW14	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:222
+00011fd0 t OS_Trap_Interrupt_HW15	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:227
+00011fdc t OS_Trap_Interrupt_HW16	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:232
+00011fe8 t OS_Trap_Interrupt_HW17	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:237
+00011ff4 t OS_Trap_Interrupt_HW18	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:242
+00012000 t OS_Trap_Interrupt_HW19	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:247
+0001200c t OS_Trap_Interrupt_HW20	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:252
+00012018 t OS_Trap_Interrupt_HW21	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:257
+00012024 t OS_Trap_Interrupt_HW22	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:262
+00012030 t OS_Trap_Interrupt_HW23	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:267
+0001203c t OS_Trap_Interrupt_HW24	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:272
+00012048 t OS_Trap_Interrupt_HW25	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:277
+00012054 t OS_Trap_Interrupt_HW26	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:282
+00012060 t OS_Trap_Interrupt_HW27	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:287
+0001206c t OS_Trap_Interrupt_HW28	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:292
+00012078 t OS_Trap_Interrupt_HW29	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:297
+00012084 t OS_Trap_Interrupt_HW30	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:302
+00012090 t OS_Trap_Interrupt_HW31	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:307
+0001209c t ___start	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/crt0.S:327
+000120ec T OS_Trap_Interrupt_SWI	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/os_cpu_a.S:110
+0001224c T Clock_DeepSleepSysClkSelect
+0001234e T Power_GotoDeepSleep
+0001243c t HT1621B_Delay	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/display/ht1621b.c:50
+00012530 T Timer6Interrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/main.c:278
+00012538 T Clock_CoreClkDivSet
+00012550 T Clock_CoreClkDivGet
+0001255a T Clock_SysClkDivGet
+00012578 T Clock_PllFreqGet
+0001257e T Clock_APllFreqGet
+00012584 T Clock_CoreClockFreqGet
+000125f0 T Clock_SysClockFreqGet
+00012626 T Clock_SysClkDivSet
+00012680 T GPIO_RegOneBitSet
+00012690 T GPIO_RegOneBitClear
+000126a4 T DelayMs
+000126f6 T __udelay
+00012748 T Timer_InterruptFlagClear
+000127fc T SystickInterrupt	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/portISR.c:102
+00012840 T DMA0_Interrupt
+000128c0 T DMA1_Interrupt
+0001295a T DMA2_Interrupt
+000129f4 T DMA3_Interrupt
+00012a8e T DMA4_Interrupt
+00012b28 T DMA5_Interrupt
+00012bc2 T DMA6_Interrupt
+00012c5c T DMA7_Interrupt
+00012cf6 T GetSysTick1MsCnt
+00012cfc T PastTimeGet
+00012d10 T TimeOutSet
+00012d30 T IsTimeOut
+00012de6 W UART1_Interrupt
+00012e6c t ld_acl_clk_isr
+00012efe t ld_acl_rx.constprop.12
+000132a2 T BT_Interrupt
+00013364 t I2SInPlayModeStopped	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:673
+00013398 t I2SInPlayModeCreating.isra.0	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:522
+000133c4 t I2SInPlayModeStarting.isra.1	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:557
+00013410 T I2SInPlayResRelease	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:211
+00013488 T I2SInPlayResMalloc	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:259
+000134dc T I2SInPlayResInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:309
+00013518 t I2SInPlayEntrance	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:698
+00013690 T I2SInPlayCreate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:925
+00013800 T I2SInPlayStart	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:950
+00013828 T I2SInPlayStop	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:984
+00013870 T I2SInPlayKill	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:1005
+0001390c T GetI2SInMessageHandle	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:1112
+0001391c t NextModeProcess.isra.0	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:848
+00013954 T EndModeExit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:1437
+00013ac4 T CommonMsgProccess	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:1712
+00013e40 T MainAppTaskStart	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:3679
+00013ea0 T GetMainMessageHandle
+00013ea8 T GetSystemMode
+00013eb0 T SoftFlagRegister
+00013ebc T SoftFlagDeregister
+00013ecc T SoftFlagGet
+00013edc T SysVarInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:3728
+00013f68 T AudioResRelease	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:4227
+00014078 T AudioResMalloc	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:4397
+00014148 T AudioResInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:4586
+000141e0 t MainAppTaskEntrance
+00014e18 T SamplesFrameUpdataMsg	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:4677
+00014e40 T EffectUpdataMsg	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:4691
+00014e68 T ResourceRegister
+00014e74 T ResourceDeregister	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:148
+00014e84 T ResourceValue
+00014e8c T ResourcePreSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:161
+00014e9c T ModeResumeMask	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:192
+00014eb8 T WaitingPlayStateSet
+00014f14 T I2SInStateSet
+00014f70 T ModeStateSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:595
+00014fa0 T GetAppMessageHandle	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:686
+00014fd4 T AppStateMsgAck	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:777
+00015168 T FindPriorityMode	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:842
+000151b8 T FindResourceMode	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:866
+00015210 T CheckModeResource
+0001523c T NextAppMode	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:904
+00015264 T FindModeByPlugInMsg	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:934
+000152b8 T ModeNameStr	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:960
+000152d0 t WaitingPlayModeStopped	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:351
+00015304 t WaitingPlayModeCreating.isra.0	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:242
+00015330 t WaitingPlayModeStarting.isra.1	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:278
+00015364 T WaitingPlayPermissionMode	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:367
+0001538c t WaitingPlayEntrance	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:379
+00015498 T WaitingPlayCreate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:520
+0001554c T WaitingPlayStart	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:545
+00015574 T WaitingPlayStop	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:579
+0001559c T WaitingPlayKill	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:590
+000155fc T GetWaitingPlayMessageHandle	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:650
+0001560c T AudioCoreSourceFreqAdjust	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_adjust.c:116
+0001574c t AudioEffectHowlingSuppressorSpecifieInit.part.2	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:1461
+000157ec t AudioEffectCompanderInit.part.3	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:1994
+00015854 t AudioEffectLowLevelCompressorInit.part.4	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2073
+000158b8 t AudioEffectExciterInit.part.6	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2352
+00015924 t AudioEffectExpanderInit.part.7	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2452
+00015994 t AudioEffectSilenceDectorInit.part.11	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2735
+000159f4 t AudioEffectPitchShifterInit.part.12	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2778
+00015a78 t AudioEffectPitchShifterProInit.part.13	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2845
+00015ae8 t AudioEffectAutoTuneInit.part.14	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2941
+00015b68 t AudioEffectVoiceChangerInit.part.15	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3028
+00015bd8 t AudioEffectReverbInit.part.17	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3238
+00015c88 t AudioEffectReverbConfig.part.18	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3302
+00015cc8 t AudioEffectPlateReverbInit.part.19	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3330
+00015db8 t AudioEffectReverProbConfig.part.21	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3531
+00015e4c t AudioEffectThreeDInit.part.24	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3799
+00015eac t AudioEffectVBInit.part.26	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3885
+00015f5c t AudioEffectVBClassicInit.part.27	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3977
+00015fc8 t AudioEffectDRCInit.part.28	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4035
+0001605c t AudioEffectEQInit.part.29	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4100
+000160f0 T roboeffect_db_to_scaling	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:52
+00016138 T du_efft_fadein_sw	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:58
+000161d8 T du_efft_fadeout_sw	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:84
+00016278 T AudioEffectsAllDisable	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:169
+0001638c T AudioEffectsDeInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:369
+0001669c T AudioEffectDRCLegacyInit
+0001679c T AudioEffectDRCLegacyConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:1273
+0001685c T AudioEffectDRCLegacyApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:1321
+0001687c T AudioEffectHowlingSuppressorSpecifieInit
+0001688c T AudioEffectHowlingSuppressorSpecifiedApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:1516
+000168a0 T AudioEffectCompanderInit
+000168b0 T AudioEffectCompanderApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2035
+00016914 T AudioEffectLowLevelCompressorInit
+00016924 T AudioEffectLowLevelCompressorApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2114
+0001693c T AudioEffectPcmDelayInit
+00016a04 T AudioEffectExciterInit
+00016a14 T AudioEffectExciterConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2395
+00016a30 T AudioEffectAecInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2416
+00016a34 T AudioEffectExpanderInit
+00016a44 T AudioEffectExpanderConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2498
+00016a78 T AudioEffectExpanderThresholdConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2518
+00016a98 T AudioEffectFreqShifterInit
+00016af0 T AudioEffectFreqShifterConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2570
+00016b10 T AudioEffectHowlingSuppressorInit
+00016b68 T AudioEffectHowlingSuppressorConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2654
+00016b80 T AudioEffectHowlingSuppressorFineInit
+00016bd8 T AudioEffectHowlingSuppressorFineApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2703
+00016bf4 T AudioEffectSilenceDectorInit
+00016c04 T AudioEffectPitchShifterInit
+00016c14 T AudioEffectPitchShifterProInit
+00016c24 T AudioEffectPitchShifterConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2890
+00016c48 T AudioEffectPitchShifterProConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:2919
+00016c6c T AudioEffectAutoTuneInit
+00016c7c T AudioEffectAutoTuneConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3004
+00016cb0 T AudioEffectVoiceChangerInit
+00016cc0 T AudioEffectVoiceChangerConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3071
+00016cdc T AudioEffectVoiceChangerProInit
+00016ce0 T AudioEffectVoiceChangerProConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3134
+00016ce4 T AudioEffectEchoInit
+00016db8 T AudioEffectEchoConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3215
+00016e00 T AudioEffectReverbInit
+00016e10 T AudioEffectReverbConfig
+00016e20 T AudioEffectPlateReverbInit
+00016e30 T AudioEffectPlateReverbHighcutModulaConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3403
+00016ebc T AudioEffectPlateReverbConfig
+00016f20 T AudioEffectReverbProInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3451
+0001702c T AudioEffectReverProbConfig
+00017038 T AudioEffectVocalCutInit
+0001709c T AudioEffectVocalRemoveInit
+000170a0 T AudioEffectVocalRemoveConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3681
+000170dc T AudioEffectChorusInit
+00017140 T AudioEffectThreeDInit
+00017150 T AudioEffectThreeDPlusInit
+000171b4 T AudioEffectVBInit
+000171c4 T AudioEffectVBConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:3952
+000171f4 T AudioEffectVBClassicInit
+00017204 T AudioEffectVBClassicConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4020
+0001721c T AudioEffectDRCInit
+0001722c T AudioEffectDRCConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4082
+00017284 T AudioEffectEQInit
+00017294 T AudioEffectEQPregainConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4149
+000172ac T AudioEffectEQFilterClearBufConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4180
+000172d8 T AudioEffectEqDrcInit
+00017380 T AudioEffectEqDrcApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4241
+00017398 T AudioEffectEqDrcFilterConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4268
+00017420 T AudioEffectStereoWidenerInit
+0001747c T AudioEffectAutoWahInit
+000174d0 T AudioEffectPingPongInit
+00017588 T AudioEffectPcmDelayApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4784
+0001759c T AudioEffectExciterApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4835
+000175b8 T AudioEffectExpanderApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4856
+000175cc T AudioEffectFreqShifterApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4870
+000175e0 T AudioEffectHowlingSuppressorApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4930
+000175f4 T AudioEffectSilenceDectorApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:4961
+00017618 T AudioEffectPregainApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5019
+000176b8 T AudioEffectPitchShifterApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5101
+00017708 T AudioEffectPitchShifterProApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5148
+0001771c T AudioEffectAutoTuneApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5217
+0001773c T AudioEffectVoiceChangerApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5245
+00017750 T AudioEffectVoiceChangerProApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5260
+00017754 T AudioEffectEchoApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5275
+00017788 T AudioEffectReverbApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5390
+0001779c T AudioEffectPlateReverbApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5404
+000177b4 T AudioEffectReverbProApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5456
+000177e0 T AudioEffectVocalCutApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5486
+00017800 T AudioEffectVocalRemoveApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5502
+00017818 T AudioEffectThreeDApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5585
+00017838 T AudioEffectThreeDPlusApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5610
+00017858 T AudioEffectVBApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5627
+00017a78 T AudioEffectVBClassicApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5796
+00017bf4 T AudioEffectDRCApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5929
+00017c0c T AudioEffectStereoWidenerApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:5950
+00017c20 T AudioEffectEQApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:6007
+00017c98 T AudioEffectHowlingGuardInit
+00017d10 T AudioEffectHowlingGuardConfigure	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:6369
+00017d60 T AudioEffectHowlingGuardApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:6394
+00017d74 T AudioEffectDynamicEqInit
+00017e68 T AudioEffectsInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:881
+000182d8 T AudioEffectDynamicEqApply	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:6679
+00018368 T GetAudioEffectMaxValue	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:6879
+000183b8 T ReverbStepSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:6958
+00018500 T Communication_Effect_GetPcSta	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:7118
+0001852c T Communication_Effect_SetPcSta	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:7138
+00018560 T Communication_Effect_IsUpdataToPC	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:7162
+00018568 T Communication_Effect_DraPost_page1	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:140
+0001856c T Communication_Effect_DraPost_page2	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:314
+00018570 T Communication_Effect_DraPost_page3	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:399
+00018574 T Communication_Effect_DraPost_page4	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:536
+00018578 T Communication_Effect_DraPost_page5	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:676
+0001857c T Communication_Effect_PhaseShifter	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:835
+00018580 T Communication_Effect_Chorus2	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:1046
+00018584 T Communication_Effect_DCBlocker	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:1238
+00018588 T Communication_Effect_VBSurround	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:1321
+0001858c T Communication_Effect_ButterWorth	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:1405
+00018590 T Communication_Effect_LRBalancer	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:1728
+00018594 T AudioEffectClassDescParser	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:2049
+000188e0 T Communication_Effect_HowlingGuard	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:924
+00018ac4 T Communication_Effect_DynamicEQ	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:1544
+00018d50 T Communication_Effect_HowlingSpecified	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:1832
+00018ee4 T Communication_Effect_HowlingSpecified_1	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:1970
+00018fe4 T AudioInputMix	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_mix_process.c:31
+00019000 T EffectPcmBufMalloc	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:59
+000190e8 T EffectPcmBufRelease	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:145
+00019188 T EffectPcmBufClear	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:208
+0001920c T GetAudioEffName	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:302
+00019270 T LoadAudioParamas
+00019320 T AudioEffectModeSel	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:455
+000193a0 T AudioEffectProcess	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:516
+00019c44 T AudioNoAppProcess	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:4008
+00019ca0 T AudioPlayerSinkMuteRemind	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:113
+00019cbc T IsAudioPlayerMute
+00019cc4 T AudioPlayerMenu	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:197
+00019d48 T AudioPlayerMenuCheck	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:269
+00019d9c T AudioMicVolSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:633
+00019de8 T SystemAppSourceVolSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:898
+00019dfc T SystemVolSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:903
+00019e3c T AudioPlayerMute
+00019e94 T AudioMusicVolUp	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:292
+00019f18 T AudioMusicVolDown	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:409
+00019f98 T AudioMicVolUp	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:580
+00019ff8 T AudioMicVolDown	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:614
+0001a054 T SystemVolUp	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:646
+0001a19c T SystemVolDown	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:777
+0001a2e4 T AudioEffectParamSync	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:1066
+0001a318 T SetRecMusic	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:1221
+0001a35c T Communication_Effect_Init	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:462
+0001a7cc T Communication_Effect_Init_BTHFP	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:1067
+0001a7f0 T Communication_Effect_Send
+0001a800 T GetAudioLibVer	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:1168
+0001a83c T Communication_Effect_0x00	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:1190
+0001a890 T Comm_Effect_0x01
+0001a994 T Communication_Effect_0x01
+0001aa98 T Communication_Effect_0x02	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:1302
+0001aba0 T Communication_Effect_0xfc
+0001ac78 T Comm_PGA0_0x03	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:1394
+0001b050 T Communication_Effect_0x03
+0001b29c T Comm_ADC0_0x04	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:1687
+0001b500 T Communication_Effect_0x04
+0001b638 T Comm_PGA1_0x06	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:1869
+0001b784 T Communication_Effect_0x06
+0001b8ac T Comm_ADC1_0x07	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:1987
+0001bb20 T Communication_Effect_0x07
+0001bc58 T Comm_AGC1_0x08	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:2169
+0001bf54 T Communication_Effect_0x08
+0001c0cc T Comm_DAC0_0x09	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:2333
+0001c3f8 T Communication_Effect_0x09
+0001c570 T Comm_DAC1_0x0A	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:2551
+0001c86c T Communication_Effect_0x0A
+0001c9e4 T Comm_I2S0_0x0B	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:2764
+0001cca8 T Communication_Effect_0x0B
+0001cdf0 T Comm_I2S1_0x0C	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:2980
+0001d0b8 T Communication_Effect_0x0C
+0001d200 T Comm_SPDIF_0x0D
+0001d26c T Communication_Effect_0x0D
+0001d350 T MV_UserReadData
+0001d3e0 T MV_UserWriteData
+0001d50c T Communication_Effect_0x11	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:3379
+0001d804 T Communication_Effect_0x80
+0001d940 T Communication_Effect_0xff
+0001da24 T Communication_Effect_GainControl	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:3667
+0001db34 T Comm_Effect_AutoTune
+0001dc40 T Communication_Effect_AutoTune	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:3784
+0001dd1c T Communication_Effect_PitchShifter	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:3833
+0001dea8 T Communication_Effect_PitchShifterPro	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:3926
+0001e02c T Comm_Effect_Reverb	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:4020
+0001e240 T Communication_Effect_Reverb	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:4140
+0001e34c T Communication_Effect_SilenceDector	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:4189
+0001e408 T Communication_Effect_ThreeD	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:4236
+0001e58c T Communication_Effect_ThreeDPlus	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:4330
+0001e710 T Communication_Effect_VB	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:4424
+0001e924 T Communication_Effect_VBClassic	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:4575
+0001ead4 T Communication_Effect_StereoWindener	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:4665
+0001ebec T Communication_Effect_Delay	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:4741
+0001ef7c T Communication_Effect_HarmonicExciter	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:4936
+0001f180 T Communication_Effect_Vocal_Cut	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:5038
+0001f2b0 T Communication_Effect_Vocal_Remove	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:5110
+0001f478 T Communication_Effect_Chorus	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:5207
+0001f76c T Communication_Effect_Phase	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:5361
+0001f834 T Communication_Effect_PlateReverb	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:5410
+0001fc20 T Comm_Effect_ReverbPro	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:5586
+0001fe24 T Communication_Effect_ReverbPro	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:5680
+0001ffe0 T Communication_Effect_PingPong	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:5743
+00020418 T Communication_Effect_Compander	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:6524
+00020704 T Communication_Effect_LowLevelCompressor	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:6709
+00020950 T Communication_Effect_AutoWah	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:6847
+00020bcc T Communication_Effect_Echo	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:6987
+00021074 T Communication_Effect_VoiceChanger	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:7193
+00021214 T Communication_Effect_VoiceChangerPro	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:7279
+000213a0 T Comm_Effect_Expander	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:7374
+00021528 T Commuinication_Effect_Expander	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:7474
+00021614 T Communication_Effect_FreqShifter	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:7521
+00021758 T Communication_Effect_HowlingDector	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:7688
+00021864 T Communication_Effect_HowlingDectorFine	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:7758
+000219b8 T Comm_Effect_DRC	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:7845
+00021f28 T Commuinication_Effect_DRC	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:8159
+000221a8 T Communication_Effect_EQ	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:8230
+00022680 T Communication_Effect_AEC	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:8468
+00022798 T Communication_Effect_EqDrc_for_Drc	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:8906
+00022c48 T Communication_Effect_EQ_DRC	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:9133
+0002327c T Comm_Effect_DRCLegacy	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:9717
+000235e8 T Communication_Effect_DRCLegacy	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:9892
+000237e8 T Communication_Effect_After_0x80	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:9957
+00023e8c T Communication_Effect_Config	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:10199
+00024128 T EffectChange	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:10455
+000241c4 T AudioEffectListJudge	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:10610
+000242ec T LoadAudioMode	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:10697
+00024418 T UsbLoadAudioMode	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:10789
+0002450c T HIDUsb_Rx	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:10597
+00024518 t GlobalSampeRateSet.part.0	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:1213
+000245a4 T DynmmicEq_Free	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:374
+000245dc T DynmmicEq_Disable	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:387
+000245f0 T GlobalSampeRateSet
+00024600 T GlobalMclkSet
+0002468c T PrivateMclkSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:1371
+000246cc T DefaultParamgsInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:1398
+000249c4 T CtrlVarsInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:403
+00025280 T AudioLineSelSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:1681
+00025420 T AudioLine3MicSelect	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:1763
+000254b8 T BeepEnable	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:1856
+000254bc t AdcChannelKeyGet.constprop.0	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/adc_key.c:147
+0002550c T AdcKeyInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/adc_key.c:129
+00025534 T AdcKeyScan	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/adc_key.c:284
+0002568c t SaveBakBPInfo	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/breakpoint.c:434
+00025788 t FindLatestBPBak.isra.0	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/breakpoint.c:300
+000258d4 t LoadBakBPInfo
+00025980 T BP_GetInfo
+00025990 T BP_SaveInfo
+00025ac0 T BP_LoadInfo	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/breakpoint.c:129
+00025bec T BackupInfoUpdata	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/breakpoint.c:638
+00025c60 T CodeKeyInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/code_key.c:117
+00025cbc T CodeKeyScan	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/code_key.c:164
+00025ce4 T CodeKeyCheckInTimer	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/code_key.c:217
+00025d94 T usb_device_status
+00025e48 T DeviceDetect	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/device_detect.c:421
+00025fec T InitDeviceDetect	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/device_detect.c:861
+00026014 T GetDeviceInitState	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/device_detect.c:920
+0002601c T KeyInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/key.c:222
+00026030 T KeyScan	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/key.c:266
+000260a8 T report_up_grate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/upgrade.c:62
+00026120 T Report_Error_Code	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/upgrade.c:88
+00026128 T Clear_Error_Code	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/upgrade.c:93
+00026130 T start_up_grate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/upgrade.c:102
+00026270 T DispInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/display/display.c:9
+00026274 T Display	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/display/display.c:16
+00026278 T ResetFlagGet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/main.c:157
+00026318 T Timer2Interrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/main.c:195
+0002634c T SystemClockInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/main.c:290
+000263c8 T LogUartConfig
+000263f4 T main	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/main.c:504
+000265a8 T AudioCoreSourceEnable	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:444
+000265c0 T AudioCoreSourceDisable	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:452
+000265d8 T AudioCoreSourceMute	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:460
+00026604 T AudioCoreSourceUnmute	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:472
+00026630 T AudioCoreSourceVolSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:484
+00026644 T AudioCoreSinkEnable	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:501
+00026658 T AudioCoreSinkMute	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:511
+00026684 T AudioCoreSinkUnmute	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:523
+000266b0 T AudioCoreSinkVolSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:535
+000266c4 T AudioCoreProcessConfig	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:553
+000266cc T AudioCoreInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:571
+000266d0 T AudioCoreDeinit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:576
+000266d8 T AudioCoreAppSourceVolSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:895
+000268e8 T AduioCoreSinkVolSet	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:1001
+00026a84 T AudioProcessMain	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:739
+00026ae8 T AudioCoreRun	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:596
+00026c80 t AudioCoreServiceEntrance	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_service.c:101
+00026dd4 T GetAudioCoreServiceMsgHandle	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_service.c:230
+00026ddc T GetAudioCoreServiceState	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_service.c:235
+00026de4 T AudioCoreServiceCreate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_service.c:245
+00026e74 T AudioCoreServiceStart	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_service.c:295
+00026e9c T AudioCoreServicePause	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_service.c:306
+00026ebc T AudioCoreServiceResume	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_service.c:315
+00026edc T WakeupBtStackService	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/bt_stack_service.c:2046
+00026ee0 T BBErrorReport	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/bt_stack_service.c:2050
+00026ee4 T DeviceServiceCreate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/device_service.c:565
+00026f34 T GetDeviceMessageHandle	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/device_service.c:604
+00026f3c T DeviceServiceStart	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/device_service.c:614
+00026f5c T BreakPointSave
+00026fd4 T DeviceServiceEntrance	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/device_service.c:167
+00027308 t DisplayServiceEntrance	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/display_service.c:84
+000273e0 T DisplayServiceCreate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/display_service.c:151
+00027450 T GetDisplayMessageHandle	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/display_service.c:188
+00027458 T DisplayServiceStart	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/display_service.c:198
+00027478 W BLE_Interrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 t Default_Handler	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:53
+00027478 W FFTInterrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W GpioInterrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W I2C_Interrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W I2sInterrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W IRInterrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W RtcInterrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W SDIO0_Interrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W SPIM_Interrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W SPIS_Interrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W SWInterrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W SpdifInterrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W Timer3Interrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W Timer4Interrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W Timer5Interrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W UART0_Interrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+00027478 W WakeupInterrupt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:55
+0002747c T ExceptionCommHandler	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:63
+00027710 T __c_init	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:201
+00027740 T __cpu_init	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:228
+00027818 T __init	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:365
+00027858 T GIE_ENABLE	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/interrupt.c:10
+00027864 T GIE_DISABLE	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/interrupt.c:15
+00027874 T GIE_STATE_GET	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/interrupt.c:21
+0002787c T NVIC_EnableIRQ	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/interrupt.c:64
+00027898 T NVIC_DisableIRQ	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/interrupt.c:76
+000278b4 T NVIC_SetPriority	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/interrupt.c:105
+00027900 W SwUartSend	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/retarget.c:73
+00027904 T putchar
+00027984 T nds_write	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/retarget.c:131
+000279a4 T DbgUartInit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/retarget.c:145
+000279cc T DetectMic
+000279d0 T DetectEarPhone
+000279d4 T DetectMic3Or4Line
+000279d8 T MicVolSmoothProcess	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/user/misc.c:656
+000279dc T HWDeviceDected_Init	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/user/misc.c:75
+000279e0 T ShunningModeProcess
+00027ae8 T HWDeviceDected	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/user/misc.c:100
+00027b5c T SWD_task_register	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/user/soft_watch_dog.c:16
+00027b68 T SWD_task_reset	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/user/soft_watch_dog.c:26
+00027b74 T SWD_task_init	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/user/soft_watch_dog.c:31
+00027b94 T SWD_task_is_timeout	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/user/soft_watch_dog.c:38
+00027c08 T AudioADC_DigitalInit	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/adc_interface.c:35
+00027ddc T AudioADC1DataLenGet	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/adc_interface.c:200
+00027df4 T AudioADC1DataGet	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/adc_interface.c:230
+00027e2c T AudioDAC_Init	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/dac_interface.c:15
+000281c4 T AudioDAC0DataSpaceLenGet	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/dac_interface.c:443
+000281e4 T AudioDAC0DataSet	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/dac_interface.c:458
+00028208 T rfft_api	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/fft_api.c:218
+000282e0 T rifft_api	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/fft_api.c:244
+00028358 T AudioI2S_Init	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/i2s_interface.c:13
+00028494 T AudioI2S_DataLenGet	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/i2s_interface.c:112
+000284dc T AudioI2S_DataGet	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/i2s_interface.c:130
+00028578 T AudioI2S1_DataLenGet	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/i2s_interface.c:205
+00028580 T AudioI2S1_DataGet	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/i2s_interface.c:215
+0002858c T SarADC_Init	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/sadc_interface.c:12
+000285c4 T UART0_InitWpr	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/uarts_interface.c:31
+000285c8 T UART1_InitWpr	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/uarts_interface.c:36
+000285cc T UART0_SendByteWpr	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/uarts_interface.c:90
+000285fc T UART1_SendByteWpr	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/uarts_interface.c:103
+0002862c T OTG_DeviceModeSel	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:90
+0002867c T OTG_DeviceGetDescriptor	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:132
+00028828 T OTG_DeviceStandardRequest
+00028944 T OTG_DeviceClassRequest
+00028aa0 T OTG_DeviceRequestProcess	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:517
+00028b8c T audio_decoder_get_lib_version	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/audio/src/audio_decoder_api.c:152
+00028b94 t prvInsertBlockIntoFreeList	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:750
+00028be0 T pvPortMalloc	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:170
+00028ca0 T pvPortMallocFromEnd	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:312
+00028d8c T vPortFree	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:474
+00028df0 T xPortGetFreeHeapSize	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:738
+00028df8 T vPortDefineHeapRegions	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:811
+00028f00 T GetCurrentTaskHandle	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:924
+00028f14 T DeleteTaskMallocMem	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:934
+00028f58 T vListInitialise	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/list.c:75
+00028f6c T vListInitialiseItem	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/list.c:95
+00028f74 T vListInsertEnd	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/list.c:102
+00028f8c T vListInsert	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/list.c:121
+00028fbc T uxListRemove	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/list.c:179
+00028fec T CtxRestore	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/os_cpu_a.S:70
+00029080 T vPortEndScheduler	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/port.c:247
+0002909c T pxPortInitialiseStack	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/port.c:147
+0002917c T xPortStartScheduler	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/port.c:229
+00029198 T vPortYield	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/port.c:259
+000291a8 T vPortEnterCritical	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/port.c:269
+000291d8 T vPortExitCritical	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/port.c:286
+000291f8 T ulPortSetInterruptMask	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/port.c:298
+0002920c T vPortClearInterruptMask	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/port.c:319
+00029218 W vPortISRStartFirstTask	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/portISR.c:81
+0002921c t prvCopyDataToQueue	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/queue.c:1594
+000292b4 t prvCopyDataFromQueue	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/queue.c:1664
+000292e0 t prvUnlockQueue	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/queue.c:1686
+0002937c T xQueueGenericReset
+00029410 T xQueueGenericCreate
+0002946c T xQueueGenericSend	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/queue.c:593
+00029600 T xQueueCreateMutex	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/queue.c:376
+0002966c T xQueueGenericReceive	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/queue.c:1169
+0002981c T vQueueDelete	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/queue.c:1544
+00029864 t prvResetNextTaskUnblockTime
+00029884 t prvAddCurrentTaskToDelayedList
+000298d0 T xTaskGenericCreate
+00029aa8 T vTaskDelete	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:696
+00029b3c T vTaskStartScheduler	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:1447
+00029ba0 T vTaskSuspendAll
+00029bac T pcTaskGetTaskName	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:1723
+00029bd4 T xTaskIncrementTick
+00029cec T xTaskResumeAll	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:1574
+00029ddc T vTaskDelay	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:870
+00029e30 t prvIdleTask	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:2546
+00029ea0 T vTaskSwitchContext	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:2107
+00029f74 T vTaskPlaceOnEventList	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:2165
+00029fb4 T xTaskRemoveFromEventList	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:2335
+0002a03c T vTaskSetTimeOutState
+0002a064 T xTaskCheckForTimeOut	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:2442
+0002a0e8 T vTaskMissedYield	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:2491
+0002a0f0 T xTaskGetCurrentTaskHandle	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:3119
+0002a0f8 T xTaskGetSchedulerState	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:3136
+0002a110 T vTaskPriorityInherit	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:3164
+0002a198 T vTaskPriorityDisinherit	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:3227
+0002a1ec T MessageSend	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:31
+0002a210 T MessageRecv	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:70
+0002a234 T prvInitialiseHeap	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:100
+0002a268 T osSemaphoreMutexCreate	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:125
+0002a2cc T osPortMalloc_1	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:177
+0002a2f0 T osPortMallocFromEnd_1	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:194
+0002a2f4 T osPortRemainMem	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:207
+0002a2f8 T osPortFree	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:216
+0002a314 T osTaskDelay	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:224
+0002a318 T vApplicationIdleHook	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:236
+0002a330 T trace_TASK_SWITCHED_IN	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:338
+0002a37c T InstantMcpsFull	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:368
+0002a3b0 T trace_TASK_SWITCHED_OUT	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:377
+0002a444 T ADC_Enable
+0002a456 T ADC_PowerkeyChannelEnable
+0002a47e T ADC_ClockDivSet
+0002a498 T ADC_VrefSet
+0002a51c T ADC_ModeSet
+0002a53e T ADC_Calibration
+0002a58a T ADC_SingleModeDataStart
+0002a5b0 T ADC_SingleModeDataOut
+0002a5ba T AudioADC_LREnable
+0002a6bc T AudioADC_Enable
+0002a6da T AudioADC_Disable
+0002a724 T AudioADC_ChannelSwap
+0002a75a T AudioADC_HighPassFilterConfig
+0002a76e T AudioADC_HighPassFilterSet
+0002a7a4 T AudioADC_Clear
+0002a7ba T AudioADC_SampleRateGet
+0002a83e T AudioADC_SampleRateSet
+0002a974 T AudioADC_FadeTimeSet
+0002a9d0 T AudioADC_FadeEnable
+0002aa06 T AudioADC_FadeDisable
+0002aa3c T AudioADC_DigitalMute
+0002aa90 T AudioADC_SoftMute
+0002ab1c T AudioADC_VolSet
+0002ab7a T AudioADC_VolSetChannel
+0002abf0 T AudioADC_AnaInit
+0002ac30 T AudioADC_PGASel
+0002adf8 T AudioADC_PGAGainSet
+0002af64 T AudioADC_MicBias1Enable
+0002af86 T AudioADC_PGAMode
+0002afb4 T AudioADC_PGADiffGainSel
+0002afde T AudioADC_AGCChannelSel
+0002b03e T AudioADC_AGCGainOffset
+0002b05a T AudioADC_AGCMaxLevel
+0002b078 T AudioADC_AGCTargetLevel
+0002b098 T AudioADC_AGCMaxGain
+0002b0bc T AudioADC_AGCMinGain
+0002b0e0 T AudioADC_AGCFrameTime
+0002b0fe T AudioADC_AGCHoldTime
+0002b12a T AudioADC_AGCAttackStepTime
+0002b156 T AudioADC_AGCDecayStepTime
+0002b18c T AudioADC_AGCNoiseThreshold
+0002b1a6 T AudioADC_AGCNoiseGateEnable
+0002b1c6 T AudioADC_AGCNoiseGateMode
+0002b1e2 T AudioADC_AGCNoiseHoldTime
+0002b20c T AudioADC_DynamicElementMatch
+0002b26c T AudioADC_IsOverflow
+0002b284 T AudioADC_OverflowClear
+0002b2a6 T BACKUP_WriteEnable
+0002b2bc T BACKUP_WriteDisable
+0002b2c8 T BACKUP_NVMInit
+0002b314 T BACKUP_VBK22KMode
+0002b33a T Chip_Version
+0002b344 T Chip_VMIDDetectDisable
+0002b356 T Chip_Init
+0002b40c T permission_rule
+0002b498 T Clock_Config
+0002b51a T WaitOscillateWork
+0002b534 T Clock_ApbClkDivSet
+0002b546 T Clock_USBClkDivSet
+0002b558 T Clock_RC32KClkDivSet
+0002b56a T Clock_RcFreqGet
+0002b610 T Clock_PllLock
+0002b706 T Clock_APllLock
+0002b7fc T Clock_SysClkSelect
+0002b88a T Clock_USBClkSelect
+0002b8b6 T Clock_UARTClkSelect
+0002b90e T Clock_BTDMClkSelectGet
+0002b91c T Clock_Module1Enable
+0002b92c T Clock_Module2Enable
+0002b93c T Clock_Module3Enable
+0002b94c T Clock_HOSCCurrentSet
+0002b966 T Clock_AudioPllClockSet
+0002bac2 T Clock_AudioPllClockAdjust
+0002bae8 T Clock_AudioMclkSel
+0002bbc0 T EnableMPU
+0002bc22 T DisableMPU
+0002bc34 T EnableIDCache
+0002bc76 T DisableIDCache
+0002bcb8 T DataCacheInvalidAll
+0002bcc2 T ICacheInvalidAll
+0002bcea T DataCacheRangeInvalid
+0002bd50 t AudioDAC0_ChannelEnable
+0002bdb8 t AudioDAC1_ChannelEnable
+0002bdfc T AudioDAC_Enable
+0002be1a T AudioDAC_Disable
+0002be38 T AudioDAC_DitherEnable
+0002be56 T AudioDAC_DitherDisable
+0002be74 T AudioDAC_ScrambleEnable
+0002be92 T AudioDAC_ScrambleDisable
+0002beb0 T AudioDAC_Pause
+0002bece T AudioDAC_Run
+0002beec T AudioDAC_DoutModeSet
+0002bf2c T AudioDAC_EdgeSet
+0002bf72 T AudioDAC_ScrambleModeSet
+0002bf9c T AudioDAC_DsmOutdisModeSet
+0002bfca T AudioDAC_ZeroNumSet
+0002bfde T AudioDAC_SampleRateGet
+0002c062 T AudioDAC_SampleRateSet
+0002c1c8 T AudioDAC_Reset
+0002c1ea T AudioDAC_FadeTimeSet
+0002c27a T AudioDAC_FadeEnable
+0002c2ac T AudioDAC_DigitalMute
+0002c2ec T AudioDAC_VolSet
+0002c332 T AudioDAC_VmidChargeOp
+0002c368 t AudioDAC0_PowerOn
+0002c460 t AudioDAC1_PowerOn
+0002c514 T AudioDAC_ClkEnable
+0002c542 T AudioDAC_FuncReset
+0002c570 T AudioDAC_VIMDControl
+0002c582 T AudioDAC_SCFMute
+0002c5c8 T AudioDAC_IBSelect
+0002c612 T AudioDAC_AllPowerOn
+0002c736 T AudioDAC_AllChannelEnable
+0002c7c2 T AudioDAC_PowerOn
+0002c7e4 T AudioDAC_ChannelEnable
+0002c802 T DMA_ChannelAllocTableSet
+0002c814 T DMA_ChannelEnable
+0002c840 T DMA_ChannelDisable
+0002c86e T DMA_InterruptFlagClear
+0002c914 T DMA_CircularConfig
+0002caf8 T DMA_CircularDataLenGet
+0002cb6a T DMA_CircularSpaceLenGet
+0002cc4a T DMA_CircularWritePtrSet
+0002cc7e T DMA_CircularDataPut
+0002cde8 T DMA_CircularReadPtrSet
+0002ce1a T DMA_CircularDataGet
+0002cfc0 T Efuse_ReadData
+0002d026 T FFT_Init
+0002d0a0 T FFT_Start
+0002d0c2 T FFT_IsDone
+0002d0ce T FFT_IsWorking
+0002d0e0 T GPIO_RegOneBitGet
+0002d0f4 T GPIO_PortAModeSet
+0002dd7e T GPIO_PortBModeSet
+0002dff8 T GPIO_RegisterResetMask
+0002e002 T I2S_BclkInvertSet
+0002e032 T I2S_LrclkInvertSet
+0002e064 T I2S_MonoModeSet
+0002e094 T I2S_SampleRateGet
+0002e212 T I2S_SampleRateSet
+0002e380 T I2S_WordlengthGet
+0002e3a4 T I2S_MasterModeSet
+0002e414 T I2S_SlaveModeSet
+0002e484 T I2S_ModuleTxEnable
+0002e4ae T I2S_ModuleRxEnable
+0002e4d8 T I2S_ModuleRxDisable
+0002e502 T I2S_ModuleEnable
+0002e52c T I2S_ModuleDisable
+0002e556 T I2S_FadeTimeSet
+0002e5b6 T I2S_FadeEnable
+0002e5f0 T I2S_FadeDisable
+0002e61e T OTG_PortGetDP
+0002e62c T OTG_PortGetDM
+0002e63a T OTG_PortEnableDPPullUp
+0002e660 T OTG_PortDisableDPPullUp
+0002e686 T OTG_PortIsEnableDPPullUp
+0002e696 T OTG_PortEnablePullDown
+0002e6bc T OTG_PortDisablePullDown
+0002e6e2 T OTG_PortIsEnablePullDown
+0002e6ee T OTG_PortEnablePullUp500K
+0002e714 T OTG_PortDisablePullUp500K
+0002e73a T OTG_PortSetSpeed
+0002e760 T OTG_PortLinkCheck
+0002e9a4 T OTG_PortSetDetectMode
+0002e9ae t OTG_DeviceWaitEnd
+0002ea24 T OTG_DeviceDisConnect
+0002ea36 T OTG_DeviceStallSend
+0002ea94 T OTG_DeviceEndpointReset
+0002eb48 T OTG_DeviceAddressSet
+0002eb82 T OTG_DeviceInit
+0002ec04 T OTG_DeviceBusEventGet
+0002ec0e T OTG_DeviceControlSend
+0002ec68 T OTG_DeviceControlReceive
+0002ece0 T OTG_DeviceSetupReceive
+0002ed36 T UsbInterrupt
+0002ed88 T LoadFIFOData
+0002eda4 T UnloadFIFOData
+0002edc0 T Power_LDO12Config
+0002ef3c T Remap_AddrRemapSet
+0002efd6 T Remap_AddrRemapDisable
+0002f016 T Remap_InitTcm
+0002f046 T Remap_DisableTcm
+0002f05a T Reset_FlagGet
+0002f064 T Reset_FlagClear
+0002f078 T Reset_McuSystem
+0002f082 T ROM_UserRegisterSet
+0002f08c T ROM_UserRegisterGet
+0002f098 T SysTickInit
+0002f0c2 T SysTickDeInit
+0002f0d6 T SysTimerIntFlagClear
+0002f0e4 T ClockFreqGet
+0002f110 T Timer_Config
+0002f2c4 T Timer_Start
+0002f33c t UART_BaudClkGet
+0002f392 T UART0_Init
+0002f560 T UART1_Init
+0002f738 T UART0_SendByte
+0002f778 T UART1_SendByte
+0002f7b8 T GetLibVersionDriver
+0002f7be T WDG_Enable
+0002f7f6 T WDG_Feed
+0002f804 T vocal_cut_init
+0002f99c T vocal_cut_apply
+0002fed4 t auto_tune_configure_key
+0002ff80 T auto_tune_init16
+00030076 T auto_tune_init24
+0003016c T auto_tune_apply16
+00030888 T auto_wah_init
+00030a3e T chorus_init
+00030afe T compander_init
+00030c74 T compander_apply
+00030e1c T drc_legacy_init
+00031386 T drc_legacy_apply
+000317d2 T drc_init
+00031be6 T drc_apply_internal
+000321b0 T drc_apply
+000321ba T drc_apply_in32
+000321c4 T echo_init_internal
+000322dc T echo_init16
+000322ec T echo_init24
+000322fc T echo_apply16
+00032626 T eq_drc_init
+0003266e T eq_drc_configure_filters
+00032676 T eq_drc_apply
+000326f6 T exciter_init
+0003280a T exciter_apply
+00032a44 T expander_init
+00032b3a T expander_apply
+00032c8e T expander_set_threshold
+00032cb0 T fast2db
+00032ce4 T fast2binary
+00032d32 T permission_check
+00032d6e T gen_butterworth_filters_order1
+00032e1c T gen_butterworth_filters_order2
+00032f1e T gen_butterworth_filters_order3
+00033058 T gen_elliptic_filters
+00033352 T gen_linkwitz_riley_filters_order2
+00033422 T freqshifter_init
+0003347c T freqshifter_apply
+00033776 T howling_guard_init
+000338d4 T howling_guard_apply_internal
+00033a54 T howling_guard_apply
+00033a5e T is_howling_freq
+00033afa T howling_suppressor_init
+00033b14 T howling_suppressor_apply
+00034016 T low_level_compressor_init
+0003418a T low_level_compressor_apply
+000342da T noise_gate_init
+00034466 T noise_gate_apply
+00034578 T noise_gate_apply24
+00034682 T pcm_delay_init_internal
+00034708 T pcm_delay_init16
+00034712 T pcm_delay_init24
+0003471c T pcm_delay_apply16
+0003497c T pingpong_init_internal
+000349f8 T pingpong_init16
+00034a02 T pingpong_init24
+00034a0c t modulatingLatticeAllpass16
+00034af0 t latticeAllpass16
+00034b30 T reverb_plate_init16
+00034dce T reverb_plate_init24
+0003506c T reverb_plate_configure
+000350e8 T reverb_plate_apply16
+0003593c T silence_detector_init
+0003595e T silence_detector_apply
+000359a4 T stereo_widener_init
+00035a6e T stereo_widener_apply
+00035c38 T three_d_init
+00035cce T three_d_apply
+00035df4 t three_d_plus_apply_internal
+000363b4 T three_d_plus_init
+000364fe T three_d_plus_apply
+00036508 T vb_init
+00036680 T vb_apply_internal
+00036e28 T vb_apply
+00036e34 T vb_td_init
+00036ee0 T vb_td_apply_internal
+0003747a T vb_td_apply
+00037486 T vb_classic_init
+00037558 T vb_classic_apply
+000379bc T dynamic_eq_init
+00037b70 T dynamic_eq_apply16
+00038298 T eq_init
+000387e4 T eq_init_float
+00038d30 T eq_configure_pregain
+00038d84 T eq_configure_filters
+0003922c T eq_apply
+0003c2a0 T eq_apply_out32
+0003f040 T eq_clear_delay_buffer
+0003f08c T howling_suppressor_fine_init
+0003f11c T howling_suppressor_fine_apply
+00041eb0 T howling_suppressor_specified_init
+00042424 T howling_suppressor_specified_apply
+00044af0 T pitch_shifter_configure16
+00044ecc T pitch_shifter_configure24
+000452a8 T pitch_shifter_init16
+00045a20 T pitch_shifter_init24
+0004615c T pitch_shifter_apply16
+0004c4a0 T pitch_shifter_pro_init
+0004c64c T pitch_shifter_pro_apply
+0004df90 T reverb_init16
+0004e130 T reverb_init24
+0004e2c8 T reverb_configure16
+0004e424 T reverb_configure24
+0004e580 T reverb_apply16
+0004eb84 T reverb_pro_init
+00054b34 T reverb_pro_context_size
+00054b3c T reverb_pro_apply16
+000580c8 T reverb_pro_estimate_memory_usage
+00058370 T vocal_remover_init16
+0005847c T vocal_remover_init24
+00058588 T vocal_remover_apply16
+000595ac T voice_changer_init
+00059724 T pitch_detection
+0005a814 T voice_changer_apply
+0005df90 T adpcm_encode_block_mono
+0005e054 T adpcm_decode_block_mono
+0005e0e2 T adpcm_encode_block_stereo
+0005e1c2 T adpcm_decode_block_stereo
+0005e284 T adpcm_encode_block32_mono
+0005e28e T adpcm_decode_block32_mono
+0005e298 T adpcm_encode_block32_stereo
+0005e2a2 T adpcm_decode_block32_stereo
+0005e2ac T nds_cmag_s32
+0005e584 T platform_reset
+0005e5bc T sniff_clk_get
+0005e5c6 T sniff_cntclk_get
+0005e5cc T ld_channel_assess
+0005e5fe T ld_read_clock
+0005e61c t ld_acl_rsw_evt_start_cbk
+0005e67a t ld_acl_rx_sync2
+0005e72e t ld_acl_rsw_end
+0005e8e0 t ld_acl_sniff_enter
+0005e99e t ld_acl_sniff_evt_start_cbk
+0005eb5a t ld_acl_rx_sync
+0005ec88 t ld_acl_sniff_exit
+0005ed0e t ld_acl_tx_prog
+0005efd6 t ld_acl_tx
+0005f342 t ld_acl_evt_start_cbk
+0005f434 t ld_acl_test_mode_update
+0005f7d8 t ld_acl_end.isra.2
+0005f8ce t ld_acl_sched
+0005f9d2 t ld_acl_rsw_start
+0005fc48 t ld_acl_sniff_sched
+0005feb4 t ld_acl_sniff_evt_canceled_cbk
+0005fed6 t ld_acl_sniff_trans_sched
+0005ffc0 t ld_acl_rsw_evt_canceled_cbk
+0005fff8 t ld_acl_rsw_frm_cbk
+000603f4 t ld_acl_resched
+00060450 t ld_acl_evt_stop_cbk
+00060484 t ld_acl_evt_canceled_cbk
+00060550 t ld_acl_rx_isr.isra.8
+00060578 t ld_acl_sniff_frm_cbk
+00060660 t ld_acl_frm_cbk
+0006090a T ld_fm_clk_isr
+00060936 T ld_fm_rx_isr
+00060954 T ld_fm_frame_isr
+0006099a T ld_fm_sket_isr
+000609f8 T ld_fm_prog_enable
+00060a14 T ld_fm_prog_disable
+00060a2e T ld_fm_prog_push
+00060af4 T ld_sched_compute
+00060b56 T ld_sched_acl_remove
+00060b6c T ld_sched_sniff_add
+00060b90 T ld_sched_sniff_remove
+00060bb0 T ld_util_fhs_unpk
+00060c98 t ea_conflict_check
+00060d4e T ea_elt_cancel
+00060e56 T ea_sw_isr
+00060e88 T ea_time_get_halfslot_rounded
+00060ea6 T ea_time_get_slot_rounded
+00060ed2 t ea_prog_timer
+00061000 T ea_elt_insert
+0006121c T ea_elt_remove
+0006127a T ea_finetimer_isr
+000613c8 T ea_alarm_clear
+00061406 T co_list_push_front
+00061412 T co_list_extract
+00061442 T co_list_extract_after
+0006145a T co_list_insert_after
+00061490 T co_rand_byte
+0006149a T co_min
+000614a2 T co_max
+000614aa T co_abs
+000614b0 T h4tl_start
+000614b2 T ke_event_set
+000614d4 T ke_malloc
+0006157a T ke_free
+00061634 T ke_msg_alloc
+0006166a T ke_msg_send
+0006168e T ke_msg_send_basic
+0006169c T ke_queue_push
+000616b8 T rwip_prevent_sleep_set
+000616d2 T rwip_wakeup
+000616e4 T rwip_prevent_sleep_clear
+000616fe T rwip_wakeup_end
+0006171c T rwip_sleep_lpcycles_2_us
+00061756 T bt_intcntl_set
+0006175e T bt_intcntl_finetgtintmsk_setf
+00061770 T bt_intack_clear
+00061778 T bt_intack_errorintack_clearf
+00061784 T bt_finetimecnt_get
+0006178e T bt_deepslcntl_extwkupdsb_setf
+000617a4 T bt_deepslcntl_deep_sleep_corr_en_setf
+000617ba T bt_deepslstat_get
+000617c4 T bt_finecntcorr_setf
+000617ce T bt_clkncntcorr_pack
+000617dc T bt_errortypestat_get
+000617e6 T bt_rftestcntl_sserrren_setf
+000617fc T bt_rftestcntl_herrren_setf
+00061812 T bt_rftestfreq_directloopbacken_setf
+00061828 T bt_rftestfreq_testmodeen_setf
+0006183e T bt_rftestfreq_rxfreq_setf
+00061854 T bt_rftestfreq_txfreq_setf
+00061868 T bt_finetimtgt_get
+00061872 T bt_finetimtgt_finetarget_setf
+0006187c T bt_sketclkn_getf
+00061886 T bt_e_scochancntl_pack
+000618a8 T bt_e_scomutecntl_pack
+000618ca T bt_e_scocurrenttxptr_pack
+000618de T bt_e_scocurrentrxptr_pack
+000618f2 T bt_e_scoltcntl_pack
+00061914 T bt_e_scotrcntl_pack
+00061936 T em_bt_frcntl_format_getf
+0006194c T em_bt_frcntl_format_setf
+0006196a T em_bt_bitoff_getf
+0006197e T em_bt_clkoff0_getf
+00061992 T em_bt_clkoff1_getf
+000619a6 T em_bt_linkcntl_afhena_setf
+000619c8 T em_bt_linkcntl_laap_setf
+000619ea T em_bt_linkcntl_whdsb_setf
+00061a0c T em_bt_linkcntl_acledr_setf
+00061a2e T em_bt_linkcntl_aclltaddr_getf
+00061a48 T em_bt_linkcntl_aclltaddr_setf
+00061a68 T em_bt_bdaddr_setf
+00061a80 T em_bt_bch0_setf
+00061a94 T em_bt_bch1_setf
+00061aa8 T em_bt_rxmaxbuf_bch2_pack
+00061ac2 T em_bt_pwrcntl_fh_en_setf
+00061ae2 T em_bt_pwrcntl_freq_setf
+00061b02 T em_bt_txrxcntl_rxthr_setf
+00061b22 T em_bt_txrxcntl_rxbcry_setf
+00061b44 T em_bt_txrxcntl_rxcrypt_setf
+00061b64 T em_bt_txrxcntl_txbcry_setf
+00061b84 T em_bt_txrxcntl_txcrypt_setf
+00061ba2 T em_bt_txdescptr_get
+00061bb6 T em_bt_txdescptr_setf
+00061bca T em_bt_loopcntl_to_nb_setf
+00061be8 T em_bt_loopcntl_att_nb_setf
+00061c06 T em_bt_maxfrmtime_setf
+00061c1a T em_bt_rxclkn0_getf
+00061c2e T em_bt_rxclkn1_getf
+00061c42 T em_bt_rxbit_rxbit_getf
+00061c5a T em_bt_acltxstat_fcrc_setf
+00061c7c T em_bt_acltxstat_fnak_setf
+00061c9e T em_bt_acltxstat_rswitch_setf
+00061cc0 T em_bt_aclrxstat_rxid_getf
+00061cd8 T em_bt_acldmpriocntl_pack
+00061cfc T em_bt_txptr_pack
+00061d14 T em_bt_txheader_txltaddr_setf
+00061d30 T em_bt_txpheader_pack
+00061d52 T bt_util_buf_lmp_tx_free
+00061d9a T bt_util_buf_acl_rx_alloc
+00061dae T bt_util_buf_acl_tx_alloc
+00061dc2 T bt_util_buf_acl_tx_free
+00061e30 T rwbt_sleep_wakeup
+00061ea4 T rwbt_sleep_wakeup_end
+00061eba T GetLibVersionFatfsACC
+00061ec0 T nds32_cos_q15
+00061f20 T nds32_sin_q15
+00061f80 T nds32_atan2_q31
+0006206c T udiv_qrnnd	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/libdsp-bsp-v4_1_0-branch/build_dir/./../libdsp/utils/udiv_qrnnd.S:80
+0006209c T nds32_fudiv_qrnnd	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/libdsp-bsp-v4_1_0-branch/build_dir/./../libdsp/utils/fudiv_qrnnd.S:59
+000620f4 T floor
+0006221a T tan
+00062276 T ceilf
+0006231c T cosf
+0006250c T floorf
+000625b0 T log2f
+000625c4 T roundf
+00062624 T sinf
+00062850 T tanf
+000628a0 T exp
+00062980 T sqrt
+00062a24 T expf
+00062c1c T logf
+00062dd0 T powf
+0006352c T sinhf
+000635ec T __ieee754_exp
+000638e2 T __ieee754_rem_pio2
+00063ca0 T __ieee754_sqrt
+00063e0e T __ieee754_rem_pio2f
+00064098 T __ieee754_sinhf
+00064190 T __mathlib_flt_infnan2
+00064198 T __mathlib_flt_infnan
+000641a0 T __mathlib_flt_underflow
+000641ac T __mathlib_flt_overflow
+000641bc T __mathlib_flt_invalid
+000641cc T __mathlib_flt_divzero
+000641e4 T __ieee_status
+000641e8 T __kernel_rem_pio2
+00064898 T __kernel_tan
+00064c70 T __kernel_rem_pio2f
+00065164 T __kernel_tanf
+0006538c T ref__mathlib_rredf2
+000654dc T fabs
+000654ec T finite
+000654fe T __fpclassifyd
+00065552 T matherr
+00065556 T scalbn
+00065624 T copysignf
+0006563c T expm1f
+000658fa T fabsf
+00065908 T finitef
+0006591a T __fpclassifyf
+0006595c T scalbnf
+00065a32 T __ieee754_expf
+00065bfe T copysign
+00065c1c T __divdi3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:451
+00065c5c T __udivdi3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:818
+00065c60 t fudiv_qrnnd	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:961
+00065cb8 T __udivmoddi4	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:1152
+00065e10 T __fixsfdi	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:3723
+00065e88 T __fixdfsi	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:3666
+00065edc T __fixunsdfsi	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/config/nds32/lib1asmsrc-mculib.S:3929
+00065f2c T __floatdisf	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/floatdisf.c:35
+00065ffc T __adddf3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/adddf3.c:35
+0006658c T __divdf3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/divdf3.c:35
+00066a3c T __eqdf2	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/eqdf2.c:35
+00066a3c T __nedf2	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/eqdf2.c:36
+00066aa6 T __gedf2	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/gedf2.c:35
+00066aa6 T __gtdf2	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/gedf2.c:36
+00066b4a T __ledf2	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/ledf2.c:35
+00066b4a T __ltdf2	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/ledf2.c:36
+00066bf0 T __muldf3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/muldf3.c:35
+00066fdc T __subdf3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/subdf3.c:35
+0006758c T __floatsidf	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/floatsidf.c:36
+000675f6 T __floatunsidf	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/floatunsidf.c:36
+00067650 T __extendsfdf2	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/extendsfdf2.c:36
+000676f6 T __truncdfsf2	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/soft-fp/truncdfsf2.c:36
+00067808 T __lshrdi3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/libgcc2.c:403
+00067830 T __ashldi3	/home/sqa/build-ast300/build-toolchain/build-2017-03-15/source-packages/gcc-4.9.3-bsp-v4_1_0-branch/libgcc/libgcc2.c:431
+00067856 T __errno
+0006785c T memcmp
+00067894 T memcpy
+000678c0 T memmove
+00067970 T memset
+000679a0 T printf
+000679aa T puts
+000679fa T rand
+00067a34 T strcpy
+00067a48 T strlen
+00067a54 t vprintf_help
+00067a88 T vprintf
+00067ad4 T do_printf
+00067f7c t sep_frac
+00067fae T _printf_float
+00068680 T abs
+00068688 T _write
+00068714 r DmaChannelMap	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:98
+00068d3c r DmaChannelMap	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:173
+00068e64 r CSWTCH.29
+00068eb0 R ResourcesAppMask	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:47
+00068f24 r DmaChannelMap	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:76
+00069560 r __func__.12885
+0006957c r __func__.11857
+000696b8 R HolingSpecifiedTab_1	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:1958
+00069968 R HolingSpecifiedTab	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:1803
+00069c18 R DynamicEqDescribeTab	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:1531
+00069cd0 R HowlingGuardTab	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_class.c:910
+0006a03c R gSysVolArr	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:64
+0006a214 R HPCList	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:456
+0006a21c R AudioEffectNameList_HFP	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:443
+0006a358 R AudioEffectNameList	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:86
+0006aca4 R Drc40CommandLen_tab	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:71
+0006acb0 R DrcCommandLen_tab	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:59
+0006acfc R drc_legacy_unit_channel	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:357
+0006ad00 R GAIN_CONTROL_TABLE	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:234
+0006ae00 R DRC_DEFAULT_TABLE	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:202
+0006aee4 R EQ_DEFAULT_TABLE	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:178
+0006b144 R SupportSampleRateList	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:102
+0006b178 R MIC_BOOST_LIST	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:94
+0006b180 R DeltafTable	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:90
+0006b190 R AutoTuneSnapTbl	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:86
+0006b194 R AutoTuneKeyTbl	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:82
+0006b1a4 R EFFECT_TAB	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:39
+0006b1c4 R HunXiang	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/effect_parameter/HunXiang.c:2
+0006bd30 R UserPWRKey_Tab	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/adc_key.c:80
+0006bdc0 r sInitSysInfo	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/breakpoint.c:37
+0006be44 r CODEKEY_TAB	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/key.c:128
+0006be58 r ADKEY_TAB	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/key.c:58
+0006c604 R MPUConfigTable	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/init-default.c:427
+0006c888 R DeviceString_LangID	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:49
+0006c88c R DeviceQualifier	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:42
+0006c898 R InterFaceNum_HID	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:471
+0006c8a0 R ConfigDescriptor_HID	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:462
+0006c8bc R InterFaceNum_AUDIO_USB_MIDI	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:458
+0006c8c4 R ConfigDescriptor_AUDIO_USB_MIDI	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:428
+0006c93c R InterFaceNum_AUDIO_MIC_READER	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:425
+0006c944 R ConfigDescriptor_AUDIO_MIC_READER	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:375
+0006ca58 R InterFaceNum_MIC_READER	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:370
+0006ca60 R ConfigDescriptor_MIC_READER	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:331
+0006cb1c R InterFaceNum_AUDIO_READER	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:328
+0006cb24 R ConfigDescriptor_AUDIO_READER	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:287
+0006cbd8 R InterFaceNum_READER	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:283
+0006cbe0 R ConfigDescriptor_READER	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:273
+0006cc00 R InterFaceNum_AUDIO_MIC_PHONE	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:270
+0006cc08 R ConfigDescriptor_AUDIO_MIC_PHONE	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:223
+0006cd04 R InterFaceNum_AUDIO_MIC	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:221
+0006cd0c R ConfigDescriptor_AUDIO_MIC	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:156
+0006ce08 R InterFaceNum_MIC_ONLY	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:153
+0006ce10 R ConfigDescriptor_MIC_ONLY	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:117
+0006ceb4 R InterFaceNum_AUDIO_ONLY	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:113
+0006cebc R ConfigDescriptor_AUDIO_ONLY	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:79
+0006cf58 R HidDataReportDescriptor	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:48
+0006cf7c R AudioCtrlReportDescriptor	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:25
+0006cfa0 r audio_decoder_lib_version	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/audio/src/audio_decoder_api.c:151
+0006d0b8 R driver_version
+0006d0dc r .LC0
+0006d0e0 r FULL_NOTES_X
+0006d140 r FULL_NOTES_G
+0006d178 r FULL_NOTES_g
+0006d1b0 r FULL_NOTES_F
+0006d1e8 r FULL_NOTES_E
+0006d220 r FULL_NOTES_e
+0006d258 r FULL_NOTES_D
+0006d290 r FULL_NOTES_d
+0006d2c8 r FULL_NOTES_C
+0006d300 r FULL_NOTES_B
+0006d338 r FULL_NOTES_b
+0006d370 r FULL_NOTES_A
+0006d3a8 r FULL_NOTES_a
+0006d468 r GIP.2871
+0006d5ec r GI.2870
+0006d6b0 r GR.2857
+0006d6f0 r GMC.2856
+0006d750 r COSTAB7
+0006e3a0 r COSTAB3
+00070058 r COSTAB5
+00071198 r HARMONIC_RATIO.2984
+000711a8 r WIN
+000719a8 r NOTCH_FILTER_COEFS
+00072bc0 r HS_COEF_T
+00072c74 r LS_COEF_T
+00072d2c R LPF_COEF_TABLE
+00072d74 R HPF_COEF_TABLE
+00072de0 r CRHS2_COEF
+00072e94 r CRHS1_COEF
+00072f48 r CRLP1_COEF
+00072f90 r CRLP2_COEF
+00072ffc r SPHP1_COEF
+00073044 r SPHP2_COEF
+000730b0 r SPLP1_COEF
+000730f8 r SPLP2_COEF
+00073164 r F1_COEF
+00073230 r GI.3128
+000732f4 r GR.3125
+00073334 r GMC.3124
+0007335c r GI.3108
+00073420 r GR.3105
+00073460 r GMC.3104
+00073488 r INTENSITY_COEF.3055
+00073560 r GI.2916
+00073624 r GI.2913
+000736e8 r GR.2910
+00073728 r GMC.2909
+00073750 r INTENSITY_COEF.2869
+0007381c r INTENSITY_COEF.2868
+00073900 r WIN
+00074108 r WIN
+0007491c r WIN.4437
+00075120 r COMB_SIZE
+000751a8 r gaintbl_r.3799
+000751f0 r gaintbl_l.3798
+00075238 r delaytbl.3785
+000752c8 r outco.4063
+00075348 r crossRc.4054
+00075358 r crossLc.4053
+00075368 r diffRc.4046
+00075390 r diffLc.4045
+00075414 r WIN.3495
+00076414 r LP_A3_1000.3726
+0007641c r LP_A2_1000.3725
+00076424 r LP_B1_1000.3724
+0007642c r NUM_PITCH_LAGS
+00076434 r PITCH_LAG_TABLE_48000
+000766c4 r PITCH_LAG_TABLE_44100
+00076938 r PITCH_LAG_TABLE_32000
+00076b48 r IMA_ADPCM_INDEX_TABLE_4BITS
+00076b50 r IMA_ADPCM_STEP_TABLE
+00076c34 R ld_acl_edr_sizes
+00076c44 R ld_acl_edr_types
+00076c4c R ld_acl_br_sizes
+00076c58 R ld_acl_br_types
+00076c60 r prbs_64bytes
+00076ca0 R rwip_priority
+00076cc4 R fatfs_acc_version
+00076ce8 r g
+00076da8 R nds32_cos_recip_table_q15_1024
+00076fa8 R nds32_cos_table_q15_1024
+00077280 r powersof2to1over16all.2165
+000772c0 r powersof2to1over16bot.2164
+00077300 r table.2150
+00077380 r powersof2to1over16top.2163
+00077428 r ln2LO
+00077438 r ln2HI
+00077448 r halF
+00077498 r npio2_hw
+00077518 r two_over_pi
+0007763c r npio2_hw
+000776bc r two_over_pi
+00077a00 r PIo2
+00077a40 r init_jk
+00077ad0 r PIo2
+00077afc r init_jk
+00077b58 R cst_libm_rredf
+00077b70 r twooverpi.1600
+00077bf4 r ln2LO
+00077bfc r ln2HI
+00077c04 r halF
+00077c1c A __ctxt_code_end
+00077c1c A __ctxt_code_start
+00077c1c A __ram_code_end
+00077c1c A __ram_code_start
+00077c1c A __rand_code_end
+00077c1c A __rand_code_start
+00077c20 A __data_lmastart
+00078360 A EILM_SIZE
+20004000 d FreqAsyncSource	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_adjust.c:47
+20004000 D __data_start
+20004000 A _stack
+20004001 d WhetherRecMusic	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:54
+20004004 d Cnt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:51
+20004008 D SetChannel	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:50
+2000400c D AudioLibVer	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:85
+20004010 D IsEffectChange	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:51
+20004014 D tx_buf	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:40
+20004114 D DynamicEqArray	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:370
+20004118 D drc_legacy_unit_init	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:361
+20004120 D eq_drc_unit	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:328
+20004128 D eq_drc_filter_buf	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:323
+20004130 D gain_unit_aggregate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:317
+20004170 D eq_param_aggregate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:314
+20004190 D expander_unit_aggregate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:312
+20004198 D drc_unit_aggregate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:311
+200041a4 D eq_unit_aggregate	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:309
+200041c4 d PreKeyIndex	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/adc_key.c:127
+200041c8 d NVM_BAK_ADDR0	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/breakpoint.c:295
+200041cc d USB_Device_State	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/device_detect.c:72
+200041d0 d MipsLog.8246
+200041d4 D HWdeviceList	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/user/misc.c:57
+200041e4 D UARTS_SendByte_MAP	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/uarts_interface.c:557
+200041ec D UARTS_Init_MAP	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/uarts_interface.c:535
+200041f4 D gDeviceString_SerialNumber	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:58
+200041f8 D gDeviceString_Manu	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:57
+200041fc D gDeviceProductString	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:56
+20004200 D InterFaceNumTab	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:488
+20004228 D ConfigDescriptorTab	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:474
+20004250 D DeviceDescriptor	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_descriptor.h:5
+20004264 d xNextTaskUnblockTime	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:226
+20004268 D BtHoscClkDiv
+2000426a D IsApllFreeRun
+2000426b D IsDpllFreeRun
+2000426c D rc_clk_freq
+20004270 D gSOCInFreq
+20004274 D gAPLLWorkFreq
+20004278 D gPLLWorkFreq
+2000427c D DMAEintTable
+2000429c D DMATintTable
+200042bc D DMADintTable
+200042dc D DMAConfigTable
+20004608 D DMAChannelAllocMap
+20004628 d i2s_mclk1
+2000462c d i2s_mclk0
+20004630 D OtgPortDeviceEnable
+20004631 D OtgPortHostEnable
+20004632 D OtgPortDeviceSofTimeOut
+20004634 D OtgPortLinkState
+20004638 d Trim1V2Val
+2000463c D DelayMsFunc
+20004640 d next
+20004644 D gBtLstoDft
+20004648 D rs_role
+20004650 D co_default_bdaddr
+20004658 D cst_libm_sincosf
+20004674 D cst_libm_expf
+200046a0 D twotokover4bot
+200046b0 D twotokover4top
+200046c0 D twotokover4all
+200046d0 D cst_libm_logf
+200046f0 D logalo
+20004710 D logahi
+20004730 D __fdlib_version
+20004738 D _NDS32_REENT__rand_next
+20004740 S MixAudioFlag	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:58
+20004740 S __bss_start
+20004740 S _edata
+20004741 S user_rLen	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:3280
+20004742 S FlashBootUpgradeFlag	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/upgrade.c:60
+20004744 S PcSetEnable	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:7115
+20004746 S EffStatusUpdata	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect.c:7116
+20004748 S gKeyValue	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/key.c:48
+2000474a S OtgPortDeviceDetectTime
+2000474c S OtgPortLinkHoldTime
+20004750 S biquad_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1669
+20004758 S SoftwareFlag	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:245
+2000475c S ModeResourceReady	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/mode_switch_api.c:140
+20004760 S pUserData	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:3281
+20004764 S user_offset	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:3279
+20004768 S AdcKeyState	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/adc_key.c:126
+2000476c S temp_tick	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/device_detect.c:261
+20004770 S ConfigDescriptor	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:54
+20004774 S InterfaceNum	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:55
+20004778 S gDeviceString_Index	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:59
+2000477c S Setup	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:51
+20004784 S SysemMipsPercent	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:230
+20004788 S gEQFilterDefault
+20004790 S unloaded_area
+20004794 S rs_addr
+2000479c S lc_state
+200047a0 S Audio_Event_param
+200047a8 S rx_clk_rc_get
+200047ac S Crccnt_dela
+200047b0 S Rc32K_freq
+200047b4 S rx_clk_rc_get1
+200047b8 S g_fat_fs
+200047c0 b I2SInPlayCt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/i2sin_mode.c:149
+200047c4 b ResMallocFlag	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:296
+200047c8 b WaitingPlayCt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/waiting_mode.c:147
+200047cc b Count	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_adjust.c:52
+200047d0 b LastRise	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_adjust.c:51
+200047d2 b AdjustValue	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_adjust.c:50
+200047d4 b AsyncRemainLast	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_adjust.c:49
+200047d8 b AsyncRemain	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_adjust.c:48
+200047dc b PeriodCount	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_adjust.c:46
+200047e0 b AdjustLevelLow	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_adjust.c:45
+200047e2 b AdjustLevelHigh	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_adjust.c:44
+200047e4 B DynamicEQWathcBuf	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:47
+200047e8 B EchoAudioBuf	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:43
+200047ec B pcm_buf_7	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:34
+200047f0 B pcm_buf_6	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:33
+200047f4 B pcm_buf_5	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:32
+200047f8 B pcm_buf_4	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:31
+200047fc B pcm_buf_3	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:30
+20004800 B pcm_buf_2	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:29
+20004804 B pcm_buf_1	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:28
+20004808 B ChannelValid	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:53
+2000480c B gIsVolSetEnable	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:49
+2000480d B IsEffectSampleLenChange	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:50
+20004810 B communic_buf_w	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:47
+20004814 B effect_list_addr	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:45
+200048b4 B effect_addr	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:43
+200049f4 B effect_list	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:42
+20004a94 B effect_sum	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:41
+20004a98 B LoadAudioParamMutex	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:32
+20004a9c B AudioEffectMutex	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:31
+20004aa0 b bp_info	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/breakpoint.c:34
+20004aa8 b codekey_1_p_old.8890
+20004aa9 b codekey_1_n_old.8891
+20004aaa b codekey_1_flag.8892
+20004aab B usb_sleep	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/device_detect.c:265
+20004aac B otg_CommonUSB_Frame_temp	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/device_detect.c:264
+20004aae B sDevice_Inserted_Flag	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/device_detect.c:250
+20004ab0 b sDevice_Init_state	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/device_detect.c:249
+20004ab4 b dectect_cnt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/device_detect.c:91
+20004ab6 B gFuncID	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/key.c:47
+20004ab8 B deviceService_run	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/main.c:193
+20004abc B SinkMuteDelay	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:55
+20004ac0 b AudioState	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:53
+20004ac4 B IsAudioCorePauseMsgSend	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_service.c:97
+20004ac8 B IsAudioCorePause	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_service.c:96
+20004acc b audioCoreServiceCt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_service.c:64
+20004adc b IsBackUpFlag.8282
+20004ae0 b Plug.8245
+20004ae4 b msgSend.8244
+20004ae8 b deviceServiceCt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/device_service.c:65
+20004af8 b displayServiceCt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/display_service.c:50
+20004b08 B IsSwUartActedAsUARTFlag	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/retarget.c:18
+20004b09 B DebugPrintPort	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/startup/retarget.c:16
+20004b0a b shnning_down_dly.12195
+20004b0c b shnning_recover_dly.12193
+20004b0e b cnt.12196
+20004b10 b shnning_up_dly.12194
+20004b14 b HWDeviceTimer.12184
+20004b20 b HWDeviceConut.12186
+20004b21 b HWDeviceInit.12185
+20004b24 b SWD_control	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/user/soft_watch_dog.c:14
+20004b34 B SDIOMutex	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/sd_card.c:28
+20004b38 B UART1Mutex	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/uarts_interface.c:26
+20004b3c B UART0Mutex	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/uarts_interface.c:25
+20004b40 B pc_upgrade	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:365
+20004b44 B UDiskMutex	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/host/otg_host_udisk.c:30
+20004b48 b xBlockAllocatedBit	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:167
+20004b4c b xMinimumEverFreeBytesRemaining	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:161
+20004b50 b xFreeBytesRemaining	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:160
+20004b54 b pxEnd	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:156
+20004b58 b xStart	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:156
+20004b6c b head	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/heap_5s.c:139
+20004b80 B psw_1	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/port.c:268
+20004b84 b psw_0	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/port.c:267
+20004b88 B ulCriticalNesting	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/port.c:266
+20004b8c b ulTotalRunTime	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:241
+20004b90 b ulTaskSwitchedInTime	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:240
+20004b94 b uxSchedulerSuspended	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:236
+20004b98 b uxTaskNumber	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:225
+20004b9c b xNumOfOverflows	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:224
+20004ba0 b xYieldPending	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:223
+20004ba4 b uxPendedTicks	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:222
+20004ba8 b xSchedulerRunning	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:221
+20004bac b uxTopReadyPriority	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:220
+20004bb0 b xTickCount	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:219
+20004bb4 b uxCurrentNumberOfTasks	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:218
+20004bb8 b uxTasksDeleted	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:201
+20004bbc b xTasksWaitingTermination	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:200
+20004bd0 b xPendingReadyList	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:196
+20004be4 b pxOverflowDelayedTaskList	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:195
+20004be8 b pxDelayedTaskList	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:194
+20004bec b xDelayedTaskList2	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:193
+20004c00 b xDelayedTaskList1	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:192
+20004c14 b pxReadyTasksLists	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:191
+20004cdc B pxCurrentTCB	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/tasks.c:188
+20004ce0 b gMcpsFullInstant	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:335
+20004ce4 b SwitchOutCycle	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:331
+20004ce8 b SwitchInCycle	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:331
+20004cec b AllTaskCycle	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:331
+20004cf0 b IdleTaskCycle	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/rtos_api/rtos_api.c:331
+20004cf4 b sIsDac1InitOK
+20004cf5 b sIsDac0InitOK
+20004cf6 B OtgPortDetectPause
+20004cf7 B gIsUsbRemove_USB1
+20004cf8 B UsbIntEn
+20004cf9 b XmcResumeCnt
+20004cfc b FlashBusyFlag
+20004d00 b EsmtFlag
+20004d04 B gSysTick
+20004d08 B bt_sniff_cntclk_f
+20004d0c B gPlatformResetFlag
+20004d10 B rs_idx
+20004d11 B rssi_cur
+20004d14 B ld_acl_cur_type
+20004d18 B rx_interfer_err_cnt
+20004d1c B rx_crc_err_cnt
+20004d20 B rx_hec_err_cnt
+20004d24 B rx_sync_err_cnt
+20004d28 b ld_acl_env
+20004d30 b ld_fm_env
+20004d78 b ld_sched_env
+20004d80 b time_msb.8807
+20004d84 b ea_env
+20004dac b ke_event_env
+20004dd0 b rwip_env
+20004de0 b rwbt_sleep_us_comp
+20004de4 B _NDS32_REENT__errno
+20004de8 b output_idx
+20004dec b output_buff
+20004df0 B eq7_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1666
+20004e40 B eq2_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1661
+20004e90 B eq8_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1667
+20004ee0 B eq1_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1660
+20004f30 B eq_drc_2_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1673
+20004f80 B eq5_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1664
+20004fd0 B eq3_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1662
+20005020 B eq_hfp_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1677
+20005070 B eq_drc_1_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1672
+200050c0 B eq6_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1665
+20005110 B eq4_filter_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/bt_audio_app_src/audio/ctrlvars.h:1663
+20005160 B ModeTimer	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:253
+2000516c B mainAppCt	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/apps/main_task.c:250
+200051bc B Audio_mode	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_effect_process.c:26
+200051cc B MenuTimer	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/audio_vol.c:58
+200051d8 B user_write_buff	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:3282
+20005258 B EffectChangeTimer	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:52
+20005264 B eff_addr_compare	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:44
+200053a4 B user_rx_data	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:3278
+200053c4 B communic_buf	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:46
+200055c4 B cbuf	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/communication.c:48
+200055dc B gCtrlVars	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/audio/ctrlvars.c:33
+20005fb8 W _FP_BASE_
+20005fb8 W _SDA_BASE_
+20006678 B AdcKeyScanTimer	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/adc_key.c:125
+20006684 B AdcKeyWaitTimer	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/device/adc_key.c:124
+20006690 B AudioCore	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/audio_core_api.c:54
+20006704 B ScanTimer	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/device_service.c:87
+20006710 B TimerBreakPoint	/cygdrive/d/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/BT_Audio_APP/Debug/../bt_audio_app_src/services/device_service.c:53
+2000671c B Request	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:52
+2000681c B hid_tx_buf	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/driver/driver_api/src/otg/device/otg_device_standard_request.c:36
+2000691c B xQueueRegistry	/cygdrive/D/2026_MV/microphone/MVsB1_BT_Karaoke_SDK_v0.3.3/MVsB1_Base_SDK/middleware/rtos/freertos/src/queue.c:187
+2000695c B FpUsbIntProcess
+20006974 B SpiFlashInfo
+20006988 B ld_env
+20006b30 B ld_sched_params
+20006b40 B rwip_rf
+20006b78 B rwip_heap_non_ret
+20006f84 B rwip_heap_env
+20007b90 B rwip_heap_msg
+20007e9c B bt_util_buf_env
+20007f4c B ke_env
+20007f78 B _end

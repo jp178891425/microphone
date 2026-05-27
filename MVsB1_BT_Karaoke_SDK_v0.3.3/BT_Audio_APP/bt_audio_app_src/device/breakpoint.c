@@ -39,7 +39,7 @@ const static BP_SYS_INFO sInitSysInfo =
 #ifdef CFG_APP_BT_MODE_EN
 	(uint8_t)AppModeBtAudioPlay,                // CurModuleId
 #else
-	(uint8_t)AppModeUDiskAudioPlay,             // CurModuleId
+	(uint8_t)AppModeI2SInAudioPlay,             // CurModuleId
 #endif
 
 	CFG_PARA_SYS_VOLUME_DEFAULT,     			//Music Volume default value
